@@ -1,0 +1,2263 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Otofarma SpA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Manifest removed: file missing. Add site.webmanifest to static/ if needed. -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/slicknav.css">
+    <link rel="stylesheet" href="/static/css/flaticon.css">
+    <link rel="stylesheet" href="/static/css/gijgo.css">
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/animated-headline.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel="stylesheet" href="/static/css/slick.css">
+    <link rel="stylesheet" href="/static/css/nice-select.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        /* Auto-highlight active nav-link with same hover color */
+        .professional-nav .nav-link.active {
+            color: #fff !important;
+            background: linear-gradient(90deg, #2E7D32 0%, #388E3C 100%) !important;
+            border-radius: 6px !important;
+            box-shadow: 0 2px 8px rgba(46,125,50,0.12);
+            font-weight: 600;
+            transition: background 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="/static/img/logo/loader.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    
+    <!-- Stock Notification Popup - Fixed Position -->
+    <div id="stock-notification" class="stock-notification-popup" style="position: fixed; top: 80px; right: 20px; width: 140px; background: linear-gradient(135deg, #ffffff, #f8fffe); border: 1px solid #2E7D32; border-radius: 8px; padding: 8px; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2); z-index: 9999; transform: translateX(100%); opacity: 0; transition: all 0.5s ease;">
+        <!-- Close Button -->
+        <button id="close-stock-notification" style="position: absolute; top: 2px; right: 2px; background: none; border: none; color: #666; font-size: 12px; cursor: pointer; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s ease;">
+            ×
+        </button>
+        
+        <!-- Compact Header -->
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+            <div style="width: 20px; height: 20px; background: linear-gradient(135deg, #2E7D32, #388E3C); border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-right: 6px;">
+                <span style="color: white; font-weight: 900; font-size: 8px; font-family: 'Poppins', sans-serif;">OTO</span>
+            </div>
+            <div style="color: #2E7D32; font-weight: 600; font-size: 9px;">
+                📈 Live
+            </div>
+        </div>
+        
+        <!-- Price Only -->
+        <div style="text-align: center; margin-bottom: 6px;">
+            <div style="font-size: 14px; font-weight: 700; color: #1B5E20;">€5.48</div>
+            <div style="font-size: 7px; color: #666;">BIT: OTO</div>
+        </div>
+        
+        <!-- Mini Action Button -->
+        <button onclick="window.open('https://www.google.com/search?q=otofarmaspa+stock+price&rlz=1C1CHBF_enIT1159IT1159&oq=OTOFAR&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg8MgkIARBFGDkYgAQyBggCEEUYOzIOCAMQRRgnGDsYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI4MjBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8', '_blank')" style="width: 100%; background: linear-gradient(135deg, #2E7D32, #388E3C); color: white; border: none; padding: 4px; border-radius: 4px; font-size: 7px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+            Dettagli
+        </button>
+    </div>
+    <header>
+        <!--? Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid" style="background: #e8f6ee;">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="/"><img src="/static/img/logo/logo.png" alt="" style="max-width: 80%; height: auto;"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav> 
+                                        <ul id="navigation" class="professional-nav">
+                                            <li><a href="/" class="nav-link active">Home</a></li>
+                                            <li><a href="/about" class="nav-link">Chi Siamo</a></li>
+                                            <li><a href="/services" class="nav-link">Prodotti</a></li>
+                                            <li><a href="/blog" class="nav-link">News</a></li>
+                                            <li><a href="/contact" class="nav-link">Contatti</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-15">
+                                    <a href="https://voice-aibot.onrender.com/" class="btn header-btn" target="_blank">
+                                        Parla con Assistente AI
+                                        <img src="/static/img/gallery/ai-technology.png" alt="AI" style="width: 22px; height: 22px; margin-left: 8px; vertical-align: middle;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    
+    <main>
+        <!--? Slider Area Start-->
+        <div class="slider-area">
+            <!-- Animated Green Line at top of hero -->
+            <div class="header-animated-line">
+                <div class="animated-line-content">
+                    <div class="line-segment segment-1"></div>
+                    <div class="line-segment segment-2"></div>
+                    <div class="line-segment segment-3"></div>
+                    <div class="line-segment segment-4"></div>
+                    <div class="line-segment segment-5"></div>
+                </div>
+            </div>
+            
+            <div class="slider-active dot-style">
+                <!-- Slider Single -->
+                <div class="single-slider d-flex align-items-center slider-height">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7 col-lg-8 col-md-10 ">
+                             <div class="hero-wrapper">
+                                <!-- Enhanced Floating particles background with more visible dots -->
+                                <div class="hero-particles">
+                                    <div class="particle particle-1"></div>
+                                    <div class="particle particle-2"></div>
+                                    <div class="particle particle-3"></div>
+                                    <div class="particle particle-4"></div>
+                                    <div class="particle particle-5"></div>
+                                    <div class="particle particle-6"></div>
+                                    <div class="particle particle-7"></div>
+                                    <div class="particle particle-8"></div>
+                                    <div class="particle particle-9"></div>
+                                    <div class="particle particle-10"></div>
+                                    <div class="particle particle-11"></div>
+                                    <div class="particle particle-12"></div>
+                                    <div class="particle particle-13"></div>
+                                    <div class="particle particle-14"></div>
+                                    <div class="particle particle-15"></div>
+                                </div>
+                                <!-- Video icon with simple play shape -->
+                                <div class="video-icon hero-video-animate video-play-container">
+                                    <a class="popup-video btn-icon video-play-button" href="https://www.otofarmaspa.com/wp-content/uploads/2025/01/Mai-piu-senza-protesi.-Spot-Otofarma-S.p.A.mp4" data-animation="bounceIn" data-delay=".4s">
+                                        ▶
+                                    </a>
+                                </div>
+                                <div class="hero__caption hero-text-animate">
+                                    <h1 class="hero-title-animate" style="border: none !important; text-decoration: none !important; border-bottom: none !important; border-top: none !important;">Ascolto che accende emozioni — Otofarma</h1>
+                                    <p class="hero-subtitle-animate">Dietro ogni suono c'è una storia, dietro ogni orecchio c'è Otofarma:<br>resta connesso al mondo che ti circonda.</p>
+                                    
+                                    <!-- OTO Live Stock Price -->
+                                    <div class="stock-price-bar hero-btn-animate">
+                                        <div class="price-container">
+                                            <span class="stock-symbol">OTO</span>
+                                            <span class="live-price">5,62</span>
+                                            <span class="currency">EUR</span>
+                                            <div class="live-dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <!-- Slider Single -->
+            <div class="single-slider d-flex align-items-center slider-height">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10 ">
+                         <div class="hero-wrapper">
+                            <!-- Enhanced Floating particles background with more visible dots -->
+                            <div class="hero-particles">
+                                <div class="particle particle-1"></div>
+                                <div class="particle particle-2"></div>
+                                <div class="particle particle-3"></div>
+                                <div class="particle particle-4"></div>
+                                <div class="particle particle-5"></div>
+                                <div class="particle particle-6"></div>
+                                <div class="particle particle-7"></div>
+                                <div class="particle particle-8"></div>
+                                <div class="particle particle-9"></div>
+                                <div class="particle particle-10"></div>
+                                <div class="particle particle-11"></div>
+                                <div class="particle particle-12"></div>
+                                <div class="particle particle-13"></div>
+                                <div class="particle particle-14"></div>
+                                <div class="particle particle-15"></div>
+                            </div>
+                            <!-- Video icon with simple play shape -->
+                            <div class="video-icon hero-video-animate video-play-container">
+                                <a class="popup-video btn-icon video-play-button" href="https://www.otofarmaspa.com/wp-content/uploads/2025/01/Mai-piu-senza-protesi.-Spot-Otofarma-S.p.A.mp4" data-animation="bounceIn" data-delay=".4s">
+                                    ▶
+                                </a>
+                            </div>
+                            <div class="hero__caption hero-text-animate">
+                                <h1 class="hero-title-animate" style="border: none !important; text-decoration: none !important; border-bottom: none !important; border-top: none !important;">Ascolto che accende emozioni — Otofarma</h1>
+                                <p class="hero-subtitle-animate">Dietro ogni suono c'è una storia, dietro ogni orecchio c'è Otofarma:<br>resta connesso al mondo che ti circonda.</p>
+                                
+                                <!-- OTO Live Stock Price -->
+                                <div class="stock-price-bar hero-btn-animate">
+                                    <div class="price-container">
+                                        <span class="stock-symbol">OTO</span>
+                                        <span class="live-price">5,62</span>
+                                        <span class="currency">EUR</span>
+                                        <div class="live-dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+<!-- Slider Area End -->
+<!--? About-2 Area Start -->
+<div class="about-area2 section-padding40">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <!-- about-img -->
+                <div class="about-img about-img-animate">
+                    <img src="/static/img/gallery/about.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="about-caption about-text-animate">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle mb-35">
+                        <h2 style="font-size: 2.8rem; font-weight: 700; color: #1a1a1a; line-height: 1.3; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 25px;">Apparecchi acustici su misura.</h2>
+                    </div>
+                    <h3 style="font-size: 1.8rem; font-weight: 600; color: #2c7f5e; line-height: 1.4; margin-bottom: 30px; font-style: italic;">Un'esperienza di ascolto incomparabile.</h3>
+                    <p class="pera-bottom mb-30" style="font-size: 1.1rem; line-height: 1.8; color: #555; font-weight: 400; text-align: justify; margin-bottom: 40px;">Per ascoltare e riscoprire l'autenticità di un suono chiaro e naturale. Gli apparecchi acustici personalizzati di <strong style="color: #2c7f5e;">Otofarma S.p.A.</strong> offrono comfort straordinario e massima discrezione per un'esperienza sonora unica.</p>
+                    <div class="icon-about icon-about-animate">
+                     <img src="/static/img/gallery/hearing-aids.png" alt="Hearing Aids" class="mr-20" style="width: 40px; height: 40px;">
+                     <img src="/static/img/gallery/hearing-aid.png" alt="Hearing Aid" style="width: 40px; height: 40px; margin-right: 15px;">
+                     <img src="/static/img/gallery/hearing-aid (1).png" alt="Hearing Aid" style="width: 40px; height: 40px;">
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>
+<!-- About-2 Area End -->
+<!--? Products Section Start -->
+<section class="products-area section-padding40" style="background: url('/static/img/hero/lightgreenbg.png') center center; background-size: cover; position: relative; padding: 35px 0;">
+    <div class="container">
+        <!-- Enhanced Moving Particles Background - INCREASED TO 35 PARTICLES -->
+        <div class="slideshow-particles">
+            <div class="slide-particle slide-particle-1"></div>
+            <div class="slide-particle slide-particle-2"></div>
+            <div class="slide-particle slide-particle-3"></div>
+            <div class="slide-particle slide-particle-4"></div>
+            <div class="slide-particle slide-particle-5"></div>
+            <div class="slide-particle slide-particle-6"></div>
+            <div class="slide-particle slide-particle-7"></div>
+            <div class="slide-particle slide-particle-8"></div>
+            <div class="slide-particle slide-particle-9"></div>
+            <div class="slide-particle slide-particle-10"></div>
+            <div class="slide-particle slide-particle-11"></div>
+            <div class="slide-particle slide-particle-12"></div>
+            <div class="slide-particle slide-particle-13"></div>
+            <div class="slide-particle slide-particle-14"></div>
+            <div class="slide-particle slide-particle-15"></div>
+            <div class="slide-particle slide-particle-16"></div>
+            <div class="slide-particle slide-particle-17"></div>
+            <div class="slide-particle slide-particle-18"></div>
+            <div class="slide-particle slide-particle-19"></div>
+            <div class="slide-particle slide-particle-20"></div>
+            <div class="slide-particle slide-particle-21"></div>
+            <div class="slide-particle slide-particle-22"></div>
+            <div class="slide-particle slide-particle-23"></div>
+            <div class="slide-particle slide-particle-24"></div>
+            <div class="slide-particle slide-particle-25"></div>
+            <div class="slide-particle slide-particle-26"></div>
+            <div class="slide-particle slide-particle-27"></div>
+            <div class="slide-particle slide-particle-28"></div>
+            <div class="slide-particle slide-particle-29"></div>
+            <div class="slide-particle slide-particle-30"></div>
+            <div class="slide-particle slide-particle-31"></div>
+            <div class="slide-particle slide-particle-32"></div>
+            <div class="slide-particle slide-particle-33"></div>
+            <div class="slide-particle slide-particle-34"></div>
+            <div class="slide-particle slide-particle-35"></div>
+            <div class="slide-particle slide-particle-30"></div>
+            <div class="slide-particle slide-particle-31"></div>
+            <div class="slide-particle slide-particle-32"></div>
+            <div class="slide-particle slide-particle-33"></div>
+            <div class="slide-particle slide-particle-34"></div>
+            <div class="slide-particle slide-particle-35"></div>
+        </div>
+        
+        <!-- Beautiful Section Title with Animated Icon -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12">
+                <div class="section-tittle text-center mb-45">
+                    <div class="products-title-wrapper">
+                        <span class="products-subtitle" style="font-size: 1.2rem; font-weight: 600; color: #ffffff; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8px; display: block; text-shadow: 0 3px 10px rgba(0,0,0,0.4);">SCOPRI LA QUALITÀ</span>
+                        
+                        <!-- Enhanced Animated Red Line BELOW the subtitle - BIGGER AND MORE ANIMATED -->
+                        <div class="products-title-line-enhanced" style="width: 280px; height: 6px; background: linear-gradient(90deg, transparent, #dc3545, #ff4757, #dc3545, transparent); margin: 0 auto 25px; border-radius: 3px; box-shadow: 0 4px 20px rgba(220, 53, 69, 0.6), 0 0 40px rgba(220, 53, 69, 0.3); animation: pulseGlow 2s ease-in-out infinite alternate;"></div>
+                        
+                        <!-- Animated Title with Properly Aligned Icon -->
+                        <div class="products-main-title-container" style="position: relative; display: inline-block;">
+                            <h2 class="products-main-title" style="font-size: 3.8rem; font-weight: 900; color: #000000 !important; letter-spacing: 5px; text-transform: uppercase; margin: 15px 0 25px 0; line-height: 1.1; text-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 6px 12px rgba(0,0,0,0.08); position: relative; display: inline-block; border: none !important; text-decoration: none !important; text-decoration-line: none !important; border-bottom: none !important; border-top: none !important; border-left: none !important; border-right: none !important;">
+                                I NOSTRI PRODOTTI<img src="/static/img/gallery/hearing-aid (1).png" alt="Hearing Aid Icon" class="products-animated-icon" style="width: 50px; height: 50px; position: absolute; top: 30%; right: -65px; transform: translateY(-50%); filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));">
+                            </h2>
+                        </div>
+                        
+                        <p class="products-description" style="font-size: 1.3rem; color: #1a4518; font-weight: 500; line-height: 1.7; max-width: 850px; margin: 0 auto; letter-spacing: 0.6px; padding: 0 15px; text-align: justify; background: rgba(255,255,255,0.08); padding: 20px 25px; border-radius: 10px; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.15);">
+                            <strong style="color: #0D210B; font-size: 1.4rem;">Esplora la nostra gamma completa</strong> di <strong style="color: #0D210B;">apparecchi acustici di alta qualità</strong>, progettati con <em style="color: #2c7f5e; font-weight: 600;">tecnologia all'avanguardia</em> per offrirti un'esperienza di ascolto superiore.<br><br>
+                            Ogni prodotto rappresenta <strong style="color: #2c7f5e;">l'eccellenza italiana</strong> nell'innovazione audiologica, garantendo <em style="color: #0D210B; font-weight: 600;">comfort, discrezione e prestazioni ottimali</em> per ogni esigenza uditiva.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Products Row - Optimized for reduced background -->
+        <div class="row align-items-center justify-content-center" style="margin-top: 20px;">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="product-item product-animate product-slide-left" style="text-align: center; margin-bottom: 40px; position: relative;">
+                    <!-- Product Card Particles -->
+                    <div class="product-particles">
+                        <div class="product-particle product-particle-1"></div>
+                        <div class="product-particle product-particle-2"></div>
+                        <div class="product-particle product-particle-3"></div>
+                        <div class="product-particle product-particle-4"></div>
+                        <div class="product-particle product-particle-5"></div>
+                    </div>
+                    <a href="blog.html" class="product-link">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="/static/img/gallery/serie-cic2.png" alt="Serie CIC" class="product-image">
+                                <div class="product-overlay">
+                                    <div class="product-overlay-content">
+                                        <i class="fas fa-eye"></i>
+                                        <span>Visualizza Prodotto</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info" style="background: rgba(90, 172, 78, 0.08) !important; padding: 20px !important; border-radius: 12px !important; backdrop-filter: blur(5px) !important; border: 1px solid rgba(90, 172, 78, 0.15) !important;">
+                                <h3 class="product-title">SERIE CIC</h3>
+                                <div class="product-subtitle">Completamente nel Canale</div>
+                                <div class="product-description">Apparecchi acustici invisibili posizionati completamente all'interno del condotto uditivo per massima discrezione.</div>
+                                <div class="product-badge">Premium</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="product-item product-animate product-slide-up" style="text-align: center; margin-bottom: 40px; position: relative;">
+                    <!-- Product Card Particles -->
+                    <div class="product-particles">
+                        <div class="product-particle product-particle-6"></div>
+                        <div class="product-particle product-particle-7"></div>
+                        <div class="product-particle product-particle-8"></div>
+                        <div class="product-particle product-particle-9"></div>
+                        <div class="product-particle product-particle-10"></div>
+                    </div>
+                    <a href="blog.html" class="product-link">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="/static/img/gallery/serie-endo2.png" alt="Serie Endo" class="product-image">
+                                <div class="product-overlay">
+                                    <div class="product-overlay-content">
+                                        <i class="fas fa-eye"></i>
+                                        <span>Visualizza Prodotto</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info" style="background: rgba(90, 172, 78, 0.08) !important; padding: 20px !important; border-radius: 12px !important; backdrop-filter: blur(5px) !important; border: 1px solid rgba(90, 172, 78, 0.15) !important;">
+                                <h3 class="product-title">SERIE ENDO</h3>
+                                <div class="product-subtitle">Endoauricolare</div>
+                                <div class="product-description">Soluzioni acustiche personalizzate che si inseriscono comodamente nell'orecchio esterno per un suono naturale.</div>
+                                <div class="product-badge">Comfort</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="product-item product-animate product-slide-right" style="text-align: center; margin-bottom: 40px; position: relative;">
+                    <!-- Product Card Particles -->
+                    <div class="product-particles">
+                        <div class="product-particle product-particle-11"></div>
+                        <div class="product-particle product-particle-12"></div>
+                        <div class="product-particle product-particle-13"></div>
+                        <div class="product-particle product-particle-14"></div>
+                        <div class="product-particle product-particle-15"></div>
+                    </div>
+                    <a href="blog.html" class="product-link">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="/static/img/gallery/serie-retro-micro.png" alt="Serie Retro Micro" class="product-image">
+                                <div class="product-overlay">
+                                    <div class="product-overlay-content">
+                                        <i class="fas fa-eye"></i>
+                                        <span>Visualizza Prodotto</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info" style="background: rgba(90, 172, 78, 0.08) !important; padding: 20px !important; border-radius: 12px !important; backdrop-filter: blur(5px) !important; border: 1px solid rgba(90, 172, 78, 0.15) !important;">
+                                <h3 class="product-title">SERIE RETRO MICRO</h3>
+                                <div class="product-subtitle">Retroauricolare Micro</div>
+                                <div class="product-description">Tecnologia avanzata in formato compatto, posizionata dietro l'orecchio per potenza e versatilità ottimali.</div>
+                                <div class="product-badge">Potenza</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--? Products Section End -->
+
+<!--? Professional Counters Section Start -->
+<section class="counters-area section-padding40" style="background: #ffffff; position: relative; padding: 80px 0; overflow: hidden;">
+    <div class="container">
+        <!-- Professional Floating Elements Background -->
+        <div class="counters-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+            <div class="floating-shape shape-7"></div>
+            <div class="floating-shape shape-8"></div>
+            <div class="floating-shape shape-9"></div>
+            <div class="floating-shape shape-10"></div>
+            <div class="floating-shape shape-11"></div>
+            <div class="floating-shape shape-12"></div>
+            <div class="floating-shape shape-13"></div>
+            <div class="floating-shape shape-14"></div>
+            <div class="floating-shape shape-15"></div>
+            <div class="floating-shape shape-16"></div>
+            <div class="floating-shape shape-17"></div>
+            <div class="floating-shape shape-18"></div>
+            <div class="floating-shape shape-19"></div>
+            <div class="floating-shape shape-20"></div>
+            <div class="floating-shape shape-21"></div>
+            <div class="floating-shape shape-22"></div>
+            <div class="floating-shape shape-23"></div>
+            <div class="floating-shape shape-24"></div>
+            <div class="floating-shape shape-25"></div>
+        </div>
+        
+        <!-- Enhanced Section Title -->
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <div class="section-tittle text-center mb-80">
+                    <div class="counters-title-wrapper">
+                        <span class="counters-subtitle" style="font-size: 1.3rem; font-weight: 700; color: #2E7D32; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 15px; display: block; text-shadow: 0 2px 6px rgba(46, 125, 50, 0.2);">LEADERSHIP NELL'ECCELLENZA</span>
+                        <h2 style="font-size: 4.5rem; font-weight: 900; color: #1B5E20; letter-spacing: 3px; text-transform: uppercase; margin: 20px 0 35px 0; line-height: 1.1; text-shadow: 0 4px 12px rgba(27, 94, 32, 0.15); background: linear-gradient(135deg, #1B5E20, #2E7D32, #388E3C); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">I NOSTRI NUMERI VINCENTI</h2>
+                        <p style="font-size: 1.4rem; color: #2C5530; font-weight: 600; line-height: 1.7; max-width: 900px; margin: 0 auto; text-shadow: 0 1px 3px rgba(44, 85, 48, 0.1);">Testimonianze concrete della nostra posizione di leadership assoluta nel panorama dell'audiologia italiana, costruita attraverso innovazione, qualità e dedizione incondizionata ai nostri pazienti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Counters Row -->
+        <div class="row align-items-center justify-content-center">
+            <!-- Counter 1: Pharmacies -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-counter counter-animate counter-slide-from-left" style="text-align: center; margin-bottom: 50px; padding: 45px 25px; background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.12); border: 2px solid rgba(90, 172, 78, 0.15); position: relative; overflow: hidden; transition: all 0.5s ease;">
+                    <!-- Counter Background Effect -->
+                    <div class="counter-bg-effect" style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(90, 172, 78, 0.08) 0%, transparent 70%); opacity: 0; transition: all 0.6s ease;"></div>
+                    
+                    <div class="counter-icon" style="margin-bottom: 30px; position: relative; z-index: 2;">
+                        <img src="/static/img/gallery/pharmacy.png" alt="Pharmacies" style="width: 85px; height: 85px; filter: drop-shadow(0 6px 18px rgba(90, 172, 78, 0.4)); transition: all 0.5s ease;">
+                    </div>
+                    <div class="counter-content" style="position: relative; z-index: 2;">
+                        <h3 class="counter-number" data-count="4000" style="font-size: 4.2rem; font-weight: 900; color: #2E7D32; margin-bottom: 12px; font-family: 'Poppins', sans-serif; text-shadow: 0 3px 8px rgba(46, 125, 50, 0.2);">0</h3>
+                        <span class="counter-plus" style="font-size: 2.8rem; font-weight: 700; color: #2E7D32; margin-left: -12px;">+</span>
+                        <h4 style="font-size: 1.5rem; font-weight: 800; color: #1B5E20; margin: 18px 0 12px 0; text-transform: uppercase; letter-spacing: 1.5px; text-shadow: 0 2px 4px rgba(27, 94, 32, 0.1);">FARMACIE AFFILIATE</h4>
+                        <p style="font-size: 1.1rem; color: #4A4A4A; line-height: 1.6; margin-bottom: 0; font-weight: 500;">Partner strategici nella rete distributiva nazionale dal 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Counter 2: Tele-audiology Visits -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-counter counter-animate counter-slide-from-right" style="text-align: center; margin-bottom: 50px; padding: 45px 25px; background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.12); border: 2px solid rgba(90, 172, 78, 0.15); position: relative; overflow: hidden; transition: all 0.5s ease;">
+                    <!-- Counter Background Effect -->
+                    <div class="counter-bg-effect" style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(90, 172, 78, 0.08) 0%, transparent 70%); opacity: 0; transition: all 0.6s ease;"></div>
+                    
+                    <div class="counter-icon" style="margin-bottom: 30px; position: relative; z-index: 2;">
+                        <img src="/static/img/gallery/TELEAUDIOLOGY VISIT (1).png" alt="Tele-audiology" style="width: 85px; height: 85px; filter: drop-shadow(0 6px 18px rgba(90, 172, 78, 0.4)); transition: all 0.5s ease;">
+                    </div>
+                    <div class="counter-content" style="position: relative; z-index: 2;">
+                        <h3 class="counter-number" data-count="14000" style="font-size: 4.2rem; font-weight: 900; color: #2E7D32; margin-bottom: 12px; font-family: 'Poppins', sans-serif; text-shadow: 0 3px 8px rgba(46, 125, 50, 0.2);">0</h3>
+                        <span class="counter-plus" style="font-size: 2.8rem; font-weight: 700; color: #2E7D32; margin-left: -12px;">+</span>
+                        <h4 style="font-size: 1.5rem; font-weight: 800; color: #1B5E20; margin: 18px 0 12px 0; text-transform: uppercase; letter-spacing: 1.5px; text-shadow: 0 2px 4px rgba(27, 94, 32, 0.1);">VISITE TELEAUDIOLOGIA</h4>
+                        <p style="font-size: 1.1rem; color: #4A4A4A; line-height: 1.6; margin-bottom: 0; font-weight: 500;">Innovazione digitale al servizio della cura uditiva dal 2023</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Counter 3: Specialized Professionals -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-counter counter-animate counter-slide-from-left" style="text-align: center; margin-bottom: 50px; padding: 45px 25px; background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.12); border: 2px solid rgba(90, 172, 78, 0.15); position: relative; overflow: hidden; transition: all 0.5s ease;">
+                    <!-- Counter Background Effect -->
+                    <div class="counter-bg-effect" style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(90, 172, 78, 0.08) 0%, transparent 70%); opacity: 0; transition: all 0.6s ease;"></div>
+                    
+                    <div class="counter-icon" style="margin-bottom: 30px; position: relative; z-index: 2;">
+                        <img src="/static/img/gallery/TEAM.png" alt="Team" style="width: 85px; height: 85px; filter: drop-shadow(0 6px 18px rgba(90, 172, 78, 0.4)); transition: all 0.5s ease;">
+                    </div>
+                    <div class="counter-content" style="position: relative; z-index: 2;">
+                        <h3 class="counter-number" data-count="200" style="font-size: 4.2rem; font-weight: 900; color: #2E7D32; margin-bottom: 12px; font-family: 'Poppins', sans-serif; text-shadow: 0 3px 8px rgba(46, 125, 50, 0.2);">0</h3>
+                        <span class="counter-plus" style="font-size: 2.8rem; font-weight: 700; color: #2E7D32; margin-left: -12px;">+</span>
+                        <h4 style="font-size: 1.5rem; font-weight: 800; color: #1B5E20; margin: 18px 0 12px 0; text-transform: uppercase; letter-spacing: 1.5px; text-shadow: 0 2px 4px rgba(27, 94, 32, 0.1);">PROFESSIONISTI SPECIALIZZATI</h4>
+                        <p style="font-size: 1.1rem; color: #4A4A4A; line-height: 1.6; margin-bottom: 0; font-weight: 500;">Team multidisciplinare di eccellenza per il percorso completo del paziente</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Counter 4: Happy Clients -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-counter counter-animate counter-slide-from-right" style="text-align: center; margin-bottom: 50px; padding: 45px 25px; background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.12); border: 2px solid rgba(90, 172, 78, 0.15); position: relative; overflow: hidden; transition: all 0.5s ease;">
+                    <!-- Counter Background Effect -->
+                    <div class="counter-bg-effect" style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(90, 172, 78, 0.08) 0%, transparent 70%); opacity: 0; transition: all 0.6s ease;"></div>
+                    
+                    <div class="counter-icon" style="margin-bottom: 30px; position: relative; z-index: 2;">
+                        <img src="/static/img/gallery/happy-client.png" alt="Happy Clients" style="width: 85px; height: 85px; filter: drop-shadow(0 6px 18px rgba(90, 172, 78, 0.4)); transition: all 0.5s ease;">
+                    </div>
+                    <div class="counter-content" style="position: relative; z-index: 2;">
+                        <h3 class="counter-number" data-count="99" style="font-size: 4.2rem; font-weight: 900; color: #2E7D32; margin-bottom: 12px; font-family: 'Poppins', sans-serif; text-shadow: 0 3px 8px rgba(46, 125, 50, 0.2);">0</h3>
+                        <span class="counter-decimal" style="font-size: 2.8rem; font-weight: 700; color: #2E7D32; margin-left: -8px;">%</span>
+                        <h4 style="font-size: 1.5rem; font-weight: 800; color: #1B5E20; margin: 18px 0 12px 0; text-transform: uppercase; letter-spacing: 1.5px; text-shadow: 0 2px 4px rgba(27, 94, 32, 0.1);">SODDISFAZIONE CLIENTI</h4>
+                        <p style="font-size: 1.1rem; color: #4A4A4A; line-height: 1.6; margin-bottom: 0; font-weight: 500;">Eccellenza verificata attraverso rigorosi controlli qualità annuali</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--? Professional Counters Section End -->
+
+<!--? Messages Slideshow Control Start -->
+<div class="messages-slideshow-control" style="background: #e8f5e8; padding: 15px 0; position: relative; z-index: 10;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="slideshow-controls" style="text-align: center;">
+                    <div class="message-nav-buttons" style="display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap;">
+                        <button class="message-btn active" data-target="president" style="background: linear-gradient(135deg, #2E7D32, #388E3C); color: white; border: none; padding: 15px 30px; border-radius: 30px; font-weight: 700; cursor: pointer; transition: all 0.4s ease; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3); min-width: 220px; position: relative; overflow: hidden;">
+                            <span style="position: relative; z-index: 2;">Messaggio del Presidente</span>
+                        </button>
+                        <button class="message-btn" data-target="ceo" style="background: rgba(255,255,255,0.9); color: #2E7D32; border: 3px solid #2E7D32; padding: 15px 30px; border-radius: 30px; font-weight: 700; cursor: pointer; transition: all 0.4s ease; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 6px 20px rgba(46, 125, 50, 0.2); min-width: 220px; position: relative; overflow: hidden;">
+                            <span style="position: relative; z-index: 2;">Messaggio del CEO</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--? Messages Slideshow Control End -->
+
+<!--? Presidential Message Section Start -->
+<section class="presidential-message-area" style="background: #e8f5e8; position: relative; padding: 60px 0; min-height: 500px;">
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row align-items-center">            
+            <!-- Message Content -->
+            <div class="col-lg-12 col-md-12">
+                <div style="padding: 30px; background: rgba(255,255,255,0.95); border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                    
+                    <!-- President Image positioned near the title -->
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; border: 3px solid #2E7D32; box-shadow: 0 6px 20px rgba(0,0,0,0.15); margin-right: 20px; flex-shrink: 0;">
+                            <img src="/static/img/gallery/otopresident.png" alt="Dr. Rino Bartolomucci" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3 style="color: #2E7D32; font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Messaggio del Presidente</h3>
+                    </div>
+                    
+                    <h2 style="color: #1B5E20; font-size: 2.2rem; font-weight: 900; margin-bottom: 25px; line-height: 1.3;">"Trasformare la Visione in Futuro con Determinazione"</h2>
+                    
+                    <p style="font-size: 1rem; line-height: 1.6; color: #333; margin-bottom: 20px; text-align: justify;">In Otofarma, non ci limitiamo ad adattarci al futuro; lo plasmiamo. Dalla nostra fondazione nel <strong style="color: #2E7D32; font-weight: 700;">2016</strong>, siamo stati all'avanguardia nel rivoluzionare la cura dell'udito in Italia. Sotto la mia guida, con oltre <strong style="color: #2E7D32; font-weight: 700;">50 anni</strong> di esperienza nel settore audiologico, abbiamo espanso la nostra portata a oltre <strong style="color: #2E7D32; font-weight: 700;">4.000 farmacie</strong> a livello nazionale e abbiamo venduto circa <strong style="color: #2E7D32; font-weight: 700;">12.500 dispositivi acustici</strong> solo nel <strong style="color: #2E7D32; font-weight: 700;">2024</strong>.</p>
+                    
+                    <p style="font-size: 1rem; line-height: 1.6; color: #333; margin-bottom: 20px; text-align: justify;">Il nostro impegno per l'<strong style="color: #2E7D32; font-weight: 700;">innovazione</strong> è incrollabile. Nel <strong style="color: #2E7D32; font-weight: 700;">2024</strong>, abbiamo raggiunto ricavi pro-forma di <strong style="color: #2E7D32; font-weight: 700;">€15,1 milioni</strong>, registrando un incremento del <strong style="color: #2E7D32; font-weight: 700;">29%</strong> rispetto all'anno precedente, con un <strong style="color: #2E7D32; font-weight: 700;">margine EBITDA del 19,7%</strong>. Questi traguardi riflettono la nostra dedizione all'<strong style="color: #2E7D32; font-weight: 700;">eccellenza</strong> e la nostra ricerca instancabile per migliorare la qualità della vita dei nostri clienti.</p>
+                    
+                    <p style="font-size: 1rem; line-height: 1.6; color: #333; margin-bottom: 20px; text-align: justify;">Guardando al futuro, siamo pronti a continuare la nostra espansione, integrando tecnologie all'avanguardia come la <strong style="color: #2E7D32; font-weight: 700;">tele-audiologia</strong> e la <strong style="color: #2E7D32; font-weight: 700;">diagnostica remota</strong> per fornire cure personalizzate accessibili a tutti. La nostra visione è chiara: <strong style="color: #2E7D32; font-weight: 700;">aprire la strada</strong> nella salute uditiva, garantendo che ogni individuo abbia l'opportunità di sperimentare il mondo a pieno volume.</p>
+                    
+                    <p style="font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 25px; font-style: italic;">Grazie per essere parte del nostro viaggio.</p>
+                    
+                    <div style="border-top: 2px solid #2E7D32; padding-top: 20px;">
+                        <div style="font-size: 1.4rem; font-weight: 900; color: #1B5E20; margin-bottom: 5px;">Dr. Rino Bartolomucci</div>
+                        <div style="font-size: 1rem; font-weight: 700; color: #2E7D32; text-transform: uppercase;">Presidente, Otofarma S.p.A.</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--? Presidential Message Section End -->
+
+<!--? CEO Message Section Start -->
+<section class="ceo-message-area" style="background: #e8f5e8; position: relative; padding: 60px 0; min-height: 500px;">
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row align-items-center">            
+            <!-- Message Content -->
+            <div class="col-lg-12 col-md-12">
+                <div style="padding: 30px; background: rgba(255,255,255,0.95); border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                    
+                    <!-- CEO Image positioned near the title -->
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; border: 3px solid #2E7D32; box-shadow: 0 6px 20px rgba(0,0,0,0.15); margin-right: 20px; flex-shrink: 0;">
+                            <img src="/static/img/gallery/givona.png" alt="Dr. Giovanna Incarnato Bartolomucci" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3 style="color: #2E7D32; font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Messaggio del CEO</h3>
+                    </div>
+                    
+                    <h2 style="color: #1B5E20; font-size: 2.2rem; font-weight: 900; margin-bottom: 25px; line-height: 1.3;">"Potenziare il Suono, Arricchire le Vite"</h2>
+                    
+                    <p style="font-size: 1rem; line-height: 1.6; color: #333; margin-bottom: 20px; text-align: justify;">In Otofarma, siamo guidati da un unico proposito: rendere la <strong style="color: #2E7D32; font-weight: 700;">cura dell'udito accessibile, umana e innovativa</strong>. Dalla nostra fondazione nel <strong style="color: #2E7D32; font-weight: 700;">2016</strong>, siamo stati all'avanguardia nel rivoluzionare la cura dell'udito in Italia. Sotto la mia guida, con oltre <strong style="color: #2E7D32; font-weight: 700;">20 anni</strong> di esperienza nel settore audiologico, abbiamo espanso la nostra portata a oltre <strong style="color: #2E7D32; font-weight: 700;">4.000 farmacie</strong> a livello nazionale e abbiamo venduto circa <strong style="color: #2E7D32; font-weight: 700;">12.500 dispositivi acustici</strong> solo nel <strong style="color: #2E7D32; font-weight: 700;">2024</strong>.</p>
+                    
+                    <p style="font-size: 1rem; line-height: 1.6; color: #333; margin-bottom: 20px; text-align: justify;">Il nostro impegno per l'<strong style="color: #2E7D32; font-weight: 700;">innovazione</strong> è incrollabile. Nel <strong style="color: #2E7D32; font-weight: 700;">2024</strong>, abbiamo raggiunto ricavi pro-forma di <strong style="color: #2E7D32; font-weight: 700;">€15,1 milioni</strong>, registrando un incremento del <strong style="color: #2E7D32; font-weight: 700;">29%</strong> rispetto all'anno precedente, con un <strong style="color: #2E7D32; font-weight: 700;">margine EBITDA del 19,7%</strong>. Questi traguardi riflettono la nostra dedizione all'<strong style="color: #2E7D32; font-weight: 700;">eccellenza</strong> e la nostra ricerca instancabile per migliorare la qualità della vita dei nostri clienti.</p>
+                    
+                    <p style="font-size: 1rem; line-height: 1.6; color: #333; margin-bottom: 20px; text-align: justify;">Guardando al futuro, siamo pronti a continuare la nostra espansione, integrando tecnologie all'avanguardia come la <strong style="color: #2E7D32; font-weight: 700;">tele-audiologia</strong> e la <strong style="color: #2E7D32; font-weight: 700;">diagnostica remota</strong> per fornire cure personalizzate accessibili a tutti. La nostra visione è chiara: <strong style="color: #2E7D32; font-weight: 700;">aprire la strada</strong> nella salute uditiva, garantendo che ogni individuo abbia l'opportunità di sperimentare il mondo a pieno volume.</p>
+                    
+                    <p style="font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 25px; font-style: italic;">Grazie per essere parte del nostro viaggio.</p>
+                    
+                    <div style="border-top: 2px solid #2E7D32; padding-top: 20px;">
+                        <div style="font-size: 1.4rem; font-weight: 900; color: #1B5E20; margin-bottom: 5px;">Dr. Giovanna Incarnato Bartolomucci</div>
+                        <div style="font-size: 1rem; font-weight: 700; color: #2E7D32; text-transform: uppercase;">CEO, Otofarma S.p.A.</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--? CEO Message Section End -->
+</main>
+<footer>
+    <div class="footer-wrappr section-bg3" data-background="/static/img/gallery/footer-bg.png">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row justify-content-between" style="position: relative;">
+                    <!-- Section 1: Job Application Form -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-section-animate" style="position: relative; animation: fadeInLeft 1s ease-out;">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle mb-30">
+                                <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">Lavora con Noi</h4>
+                                <p style="color: #666; font-size: 1rem; margin-bottom: 25px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Unisciti al nostro team di professionisti nell'innovazione audiologica</p>
+                            </div>
+                            <!-- Job Application Form -->
+                            <div class="job-application-form form-animate">
+                                <form action="mailto:info@otofarma.it" method="post" enctype="text/plain" class="job-form">
+                                    <div class="form-group mb-18">
+                                        <input type="text" name="nome" placeholder="Nome Completo *" required style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                    </div>
+                                    <div class="form-group mb-18">
+                                        <input type="email" name="email" placeholder="Email *" required style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                    </div>
+                                    <div class="form-group mb-18">
+                                        <input type="tel" name="telefono" placeholder="Telefono" style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                    </div>
+                                    <div class="form-group mb-25">
+                                        <textarea name="messaggio" rows="4" placeholder="Presentati e descrivi la tua esperienza..." style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; resize: vertical; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.5;"></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn-animate" style="background: linear-gradient(135deg, #2E7D32, #388E3C); color: white; border: none; padding: 15px 30px; border-radius: 30px; font-weight: 700; font-size: 1rem; cursor: pointer; transition: all 0.4s ease; text-transform: uppercase; letter-spacing: 0.8px; width: 100%; font-family: 'Poppins', sans-serif; box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3);">
+                                        Invia Candidatura
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Vertical Separator Line -->
+                        <div class="vertical-separator separator-animate" style="position: absolute; right: -1px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, transparent, #2E7D32, transparent); opacity: 0.7; animation: pulse 2s infinite;"></div>
+                    </div>
+
+                    <!-- Section 2: Google Maps Location -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-section-animate" style="position: relative; animation: fadeInUp 1s ease-out 0.2s both;">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle mb-30">
+                                <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">La Nostra Sede</h4>
+                                <p style="color: #666; font-size: 1rem; margin-bottom: 25px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Visita i nostri uffici e scopri l'innovazione audiologica</p>
+                            </div>
+                            <!-- Google Maps Embed -->
+                            <div class="map-container map-animate" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2); border: 3px solid rgba(46, 125, 50, 0.15); transition: all 0.4s ease;">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4446!2d16.8769456!3d41.1171526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e8b7c5a8a573%3A0x5f5b5f5b5f5b5f5b!2sOtofarma%20SpA!5e0!3m2!1sit!2sit!4v1703851200000!5m2!1sit!2sit"
+                                    width="100%" 
+                                    height="280" 
+                                    style="border:0; border-radius: 12px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                                <a href="https://maps.app.goo.gl/kimAKtS8GJ6HRpx17" target="_blank" style="position: absolute; top: 12px; right: 12px; background: rgba(46, 125, 50, 0.95); color: white; padding: 10px 16px; border-radius: 25px; font-size: 0.85rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);">
+                                    Apri in Maps
+                                </a>
+                            </div>
+                            <div style="margin-top: 18px; text-align: center;">
+                                <p style="color: #555; font-size: 0.9rem; line-height: 1.5; margin: 0; font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                    <strong style="color: #2E7D32; font-weight: 700; font-size: 1rem;">Otofarma SpA</strong><br>
+                                    <span style="color: #666; font-weight: 600;">Centro di Eccellenza Audiologica</span><br>
+                                    <span style="color: #888; font-size: 0.85rem; font-style: italic;">Clicca sulla mappa per indicazioni dettagliate</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Vertical Separator Line -->
+                        <div class="vertical-separator separator-animate" style="position: absolute; right: -1px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, transparent, #2E7D32, transparent); opacity: 0.7; animation: pulse 2s infinite 0.5s;"></div>
+                    </div>
+
+                    <!-- Section 3: Social Media Links -->
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-section-animate" style="animation: fadeInRight 1s ease-out 0.4s both;">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle mb-30">
+                                <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">Seguici</h4>
+                                <p style="color: #666; font-size: 1rem; margin-bottom: 30px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Rimani connesso con le nostre innovazioni e aggiornamenti</p>
+                            </div>
+                            <!-- Social Media Icons Grid -->
+                            <div class="social-media-grid social-grid-animate" style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 30px; justify-items: center;">
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/otofarma_s.p.a?utm_source=ig_web_button_share_sheet&igsh=MWthM3Q0MndpaXB5Nw==" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                    <img src="/static/img/gallery/instagram.png" alt="Instagram" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                </a>
+                                
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/share/1PW4kE1vwW/?mibextid=wwXIfr" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                    <img src="/static/img/gallery/facebook.png" alt="Facebook" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                </a>
+                                
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/company/otofarma-spa/" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                    <img src="/static/img/gallery/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                </a>
+                                
+                                <!-- Email -->
+                                <a href="mailto:info@otofarma.it" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                    <img src="/static/img/gallery/communication.png" alt="Email" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                </a>
+                            </div>
+                            
+                            <!-- Contact Info -->
+                            <div class="contact-info-animate" style="background: rgba(46, 125, 50, 0.06); padding: 22px; border-radius: 12px; border-left: 5px solid #2E7D32; backdrop-filter: blur(5px); box-shadow: 0 6px 20px rgba(46, 125, 50, 0.1);">
+                                <h5 style="color: #2E7D32; font-weight: 800; font-size: 1.1rem; margin-bottom: 12px; font-family: 'Poppins', sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">Contatti Diretti</h5>
+<p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+    <strong style="color: #2E7D32; font-weight: 700;">Telefono:</strong> <a href="tel:08118543072" style="color: #555; text-decoration: none;">081 1854 3072</a>
+</p>
+                                <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                    <strong style="color: #2E7D32; font-weight: 700;">Email:</strong> <a href="mailto:info@otofarma.it" style="color: #555; text-decoration: none;">info@otofarma.it</a>
+                                </p>
+                                <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                    <strong style="color: #2E7D32; font-weight: 700;">PEC:</strong> <a href="mailto:otofarmaspa@pec.it" style="color: #555; text-decoration: none;">otofarmaspa@pec.it</a>
+                                </p>
+                                <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                    <strong style="color: #2E7D32; font-weight: 700;">P.IVA:</strong> 08431301210
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Company Logo Section -->
+                <div class="row justify-content-center" style="margin-top: 40px; padding-top: 30px; border-top: 2px solid rgba(46, 125, 50, 0.1);">
+                    <div class="col-xl-12 text-center">
+                        <div class="footer-logo mb-25">
+                            <a href="/"><img src="/static/img/logo/logo2_footer.png" alt="Otofarma SpA" style="max-height: 60px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom - Copyright -->
+        <div class="footer-bottom-area" style="background: rgba(46, 125, 50, 0.05); padding: 20px 0; border-top: 1px solid rgba(46, 125, 50, 0.1);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer-copy-right text-center">
+                            <p style="color: #666; font-size: 0.9rem; margin: 0; font-weight: 500;">
+                                Copyright © 2025 | <strong style="color: #2E7D32;">Otofarma SpA</strong> | P.IVA 08431301210 | 
+                                <a href="mailto:otofarmaspa@pec.it" style="color: #2E7D32; text-decoration: none;">otofarmaspa@pec.it</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Additional CSS for Interactive Effects -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* Job Application Form Styling */
+.job-form input:focus, .job-form textarea:focus {
+    border-color: #2E7D32 !important;
+    box-shadow: 0 0 10px rgba(46, 125, 50, 0.2) !important;
+    outline: none !important;
+}
+
+.job-form button:hover {
+    background: linear-gradient(135deg, #1B5E20, #2E7D32) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3) !important;
+}
+
+/* Social Media Links Enhanced Transparent Background */
+.social-icon-link {
+    background: transparent !important;
+    border: 3px solid rgba(46, 125, 50, 0.2) !important;
+    border-radius: 22px !important;
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) !important;
+    position: relative;
+    overflow: hidden;
+    transform-origin: center;
+}
+
+.social-icon-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(46, 125, 50, 0.15), transparent);
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.social-icon-link:hover::before {
+    width: 120%;
+    height: 120%;
+}
+
+.social-icon-link:hover {
+    transform: translateY(-8px) scale(1.15) rotate(5deg) !important;
+    border-color: rgba(46, 125, 50, 0.6) !important;
+    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.3) !important;
+    backdrop-filter: blur(20px) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.social-icon-link img {
+    z-index: 1;
+    position: relative;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2)) !important;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
+}
+
+.social-icon-link:hover img {
+    transform: scale(1.1) rotate(-3deg) !important;
+    filter: drop-shadow(0 6px 12px rgba(46, 125, 50, 0.4)) !important;
+}
+
+/* Footer Section High-Class Animations */
+.footer-section-animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px) scale(0.95);
+    }
+    70% {
+        opacity: 0.7;
+        transform: translateX(5px) scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+    70% {
+        opacity: 0.7;
+        transform: translateY(-5px) scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px) scale(0.95);
+    }
+    70% {
+        opacity: 0.7;
+        transform: translateX(-5px) scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Form Animation */
+.form-animate {
+    animation: formSlideUp 1s ease-out 0.6s both;
+}
+
+@keyframes formSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-animate input:focus,
+.form-animate textarea:focus {
+    transform: scale(1.02) !important;
+    transition: all 0.4s ease !important;
+}
+
+.submit-btn-animate:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 12px 30px rgba(46, 125, 50, 0.4) !important;
+    background: linear-gradient(135deg, #1B5E20, #2E7D32) !important;
+}
+
+/* Map Animation */
+.map-animate {
+    animation: mapZoomIn 1s ease-out 0.8s both;
+    transition: all 0.4s ease;
+}
+
+@keyframes mapZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.map-animate:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.25) !important;
+}
+
+/* Social Grid Animation */
+.social-grid-animate {
+    animation: socialGridFade 1s ease-out 1s both;
+}
+
+@keyframes socialGridFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Contact Info Animation */
+.contact-info-animate {
+    animation: contactInfoSlide 1s ease-out 1.2s both;
+    transition: all 0.4s ease;
+}
+
+@keyframes contactInfoSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact-info-animate:hover {
+    transform: translateX(5px) scale(1.02) !important;
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15) !important;
+}
+
+/* Separator Animation */
+.separator-animate {
+    animation: separatorGlow 3s ease-in-out infinite;
+}
+
+@keyframes separatorGlow {
+    0%, 100% {
+        opacity: 0.7;
+        transform: scaleY(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scaleY(1.05);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.7;
+        box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.4);
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 0 10px rgba(46, 125, 50, 0);
+    }
+}
+
+/* Typography Enhancements */
+.footer-section-animate h4 {
+    position: relative;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 800 !important;
+    text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1) !important;
+}
+
+.footer-section-animate h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #2E7D32, #4CAF50);
+    transition: width 0.8s ease;
+}
+
+.footer-section-animate:hover h4::after {
+    width: 100%;
+}
+
+.footer-section-animate p {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+}
+
+/* Enhanced Form Typography */
+.form-animate input,
+.form-animate textarea {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.submit-btn-animate {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.8px !important;
+}
+
+/* Contact Info Typography */
+.contact-info-animate h5 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.contact-info-animate p {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+/* Map Container Hover Effect */
+.map-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(46, 125, 50, 0.25) !important;
+}
+
+/* Enhanced Responsiveness */
+@media (max-width: 768px) {
+    .footer-section-animate {
+        margin-bottom: 40px;
+    }
+    
+    .vertical-separator {
+        display: none;
+    }
+    
+    .social-media-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 15px !important;
+    }
+    
+    .social-icon-link {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    
+    .social-icon-link img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .footer-tittle h4 {
+        font-size: 1.2rem !important;
+    }
+    
+    .map-container iframe {
+        height: 250px !important;
+    }
+}
+
+/* Global Typography Excellence */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #555;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Enhanced Readability */
+strong {
+    font-weight: 700;
+    color: #2E7D32;
+}
+
+em {
+    font-style: italic;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Animated Green Line at Top of Hero Section */
+.header-animated-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    z-index: 999;
+    background: linear-gradient(90deg, 
+        rgba(46, 125, 50, 0.1), 
+        rgba(46, 125, 50, 0.3), 
+        rgba(46, 125, 50, 0.1)
+    );
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(46, 125, 50, 0.2);
+}
+
+.animated-line-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.line-segment {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent,
+        rgba(46, 125, 50, 0.8),
+        rgba(76, 175, 80, 1),
+        rgba(129, 199, 132, 0.9),
+        rgba(46, 125, 50, 0.8),
+        transparent
+    );
+    border-radius: 2px;
+    animation: lineFlow 8s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
+}
+
+.segment-1 {
+    width: 15%;
+    animation-delay: 0s;
+}
+
+.segment-2 {
+    width: 12%;
+    animation-delay: 1.6s;
+    background: linear-gradient(90deg, 
+        transparent,
+        rgba(56, 142, 60, 0.7),
+        rgba(102, 187, 106, 0.9),
+        rgba(56, 142, 60, 0.7),
+        transparent
+    );
+}
+
+.segment-3 {
+    width: 18%;
+    animation-delay: 3.2s;
+    background: linear-gradient(90deg, 
+        transparent,
+        rgba(67, 160, 71, 0.8),
+        rgba(139, 195, 74, 1),
+        rgba(67, 160, 71, 0.8),
+        transparent
+    );
+}
+
+.segment-4 {
+    width: 10%;
+    animation-delay: 4.8s;
+    background: linear-gradient(90deg, 
+        transparent,
+        rgba(46, 125, 50, 0.9),
+        rgba(76, 175, 80, 1),
+        rgba(46, 125, 50, 0.9),
+        transparent
+    );
+}
+
+.segment-5 {
+    width: 20%;
+    animation-delay: 6.4s;
+    background: linear-gradient(90deg, 
+        transparent,
+        rgba(27, 94, 32, 0.8),
+        rgba(46, 125, 50, 1),
+        rgba(27, 94, 32, 0.8),
+        transparent
+    );
+}
+
+@keyframes lineFlow {
+    0% {
+        left: -25%;
+        opacity: 0;
+        transform: scaleX(0.5);
+    }
+    20% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+    80% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+    100% {
+        left: 125%;
+        opacity: 0;
+        transform: scaleX(0.5);
+    }
+}
+
+/* Pulsing effect overlay */
+.header-animated-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(76, 175, 80, 0.3) 50%, 
+        transparent 100%
+    );
+    animation: linePulse 3s ease-in-out infinite;
+}
+
+@keyframes linePulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scaleY(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scaleY(1.5);
+    }
+}
+
+/* Sparkle effects */
+.header-animated-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 
+        0 0 10px rgba(76, 175, 80, 0.8),
+        0 0 20px rgba(76, 175, 80, 0.6),
+        0 0 30px rgba(76, 175, 80, 0.4);
+    animation: sparkleMove 4s linear infinite;
+    transform: translateY(-50%);
+}
+
+@keyframes sparkleMove {
+    0% {
+        left: -5px;
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+    100% {
+        left: calc(100% + 5px);
+        opacity: 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-animated-line {
+        height: 3px;
+    }
+    
+    .line-segment {
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+    }
+}
+
+@media (max-width: 480px) {
+    .header-animated-line {
+        height: 2px;
+    }
+}
+
+/* Video Play Button Professional Styling */
+.video-play-container {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.video-play-button {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 80px !important;
+    height: 80px !important;
+    background: linear-gradient(135deg, #2E7D32, #4CAF50, #66BB6A) !important;
+    border-radius: 50% !important;
+    text-decoration: none !important;
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.4) !important;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
+    overflow: visible !important;
+    border: 3px solid rgba(255, 255, 255, 0.3) !important;
+    animation: videoPulse 2s ease-in-out infinite !important;
+    color: white !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+}
+
+/* Override any existing btn-icon styles */
+.btn-icon.video-play-button {
+    width: 80px !important;
+    height: 80px !important;
+    background: linear-gradient(135deg, #2E7D32, #4CAF50, #66BB6A) !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    color: white !important;
+    border: 3px solid rgba(255, 255, 255, 0.3) !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+}
+
+@keyframes videoPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 8px 25px rgba(46, 125, 50, 0.4);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 12px 35px rgba(46, 125, 50, 0.6);
+    }
+}
+
+.video-play-button:hover {
+    transform: scale(1.15) !important;
+    background: linear-gradient(135deg, #1B5E20, #2E7D32, #388E3C) !important;
+    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.7) !important;
+    animation-duration: 1s !important;
+    color: white !important;
+}
+
+/* Scroll Up Button Professional Styling */
+.scroll-up-container {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    z-index: 1000 !important;
+}
+
+.scroll-up-button {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 60px !important;
+    height: 60px !important;
+    background: linear-gradient(135deg, #2E7D32, #4CAF50, #66BB6A) !important;
+    border-radius: 50% !important;
+    text-decoration: none !important;
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4) !important;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
+    overflow: visible !important;
+    border: 3px solid rgba(255, 255, 255, 0.2) !important;
+    animation: scrollFloat 3s ease-in-out infinite !important;
+    color: white !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+}
+
+/* Override any existing back-top styles */
+#back-top a {
+    width: 60px !important;
+    height: 60px !important;
+    background: linear-gradient(135deg, #2E7D32, #4CAF50, #66BB6A) !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    color: white !important;
+    border: 3px solid rgba(255, 255, 255, 0.2) !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+}
+
+@keyframes scrollFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+    }
+    50% {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 12px 30px rgba(46, 125, 50, 0.6);
+    }
+}
+
+.scroll-up-button:hover {
+    transform: translateY(-5px) scale(1.15) !important;
+    background: linear-gradient(135deg, #1B5E20, #2E7D32, #388E3C) !important;
+    box-shadow: 0 15px 35px rgba(46, 125, 50, 0.7) !important;
+    animation-duration: 1.5s !important;
+    color: white !important;
+}
+
+.scroll-ripple,
+.scroll-ripple-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(46, 125, 50, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: scrollRippleEffect 2.5s ease-out infinite;
+    pointer-events: none;
+}
+
+.scroll-ripple-2 {
+    animation-delay: 1.25s;
+    border-color: rgba(76, 175, 80, 0.3);
+}
+
+@keyframes scrollRippleEffect {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+/* Enhanced Hover Effects */
+.video-play-button:hover .play-triangle {
+    animation-duration: 0.8s;
+    color: #f8f9fa;
+    transform: scale(1.3);
+}
+
+.scroll-up-button:hover .arrow-up-icon {
+    animation-duration: 1s;
+    color: #f8f9fa;
+    transform: translateY(-6px) scale(1.1);
+}
+
+/* Responsive Design for Professional Buttons */
+@media (max-width: 768px) {
+    .video-play-button {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .play-triangle {
+        font-size: 22px;
+    }
+    
+    .scroll-up-button {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .arrow-up-icon {
+        font-size: 18px;
+    }
+}
+
+/* Professional Green Theme Enhancement */
+@media (prefers-reduced-motion: no-preference) {
+    .video-play-button,
+    .scroll-up-button {
+        animation-duration: 2s;
+    }
+    
+    .ripple-animation,
+    .scroll-ripple {
+        animation-duration: 3s;
+    }
+}
+</style>
+<!-- Scroll Up Button with Simple Arrow -->
+<div id="back-top" class="scroll-up-container">
+    <a title="Go to Top" href="#" class="scroll-up-button">
+        ↑
+    </a>
+</div>
+
+<!-- JS here -->
+
+<script src="/static/js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- Jquery Mobile Menu -->
+<script src="/static/js/jquery.slicknav.min.js"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/slick.min.js"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="/static/js/wow.min.js"></script>
+<script src="/static/js/animated.headline.js"></script>
+<script src="/static/js/jquery.magnific-popup.js"></script>
+
+<!-- Date Picker -->
+<script src="/static/js/gijgo.min.js"></script>
+<!-- Nice-select, sticky -->
+<script src="/static/js/jquery.nice-select.min.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="/static/js/jquery.counterup.min.js"></script>
+<script src="/static/js/waypoints.min.js"></script>
+<script src="/static/js/jquery.countdown.min.js"></script>
+<script src="/static/js/hover-direction-snake.min.js"></script>
+
+<!-- contact js -->
+<script src="/static/js/contact.js"></script>
+<script src="/static/js/jquery.form.js"></script>
+<script src="/static/js/jquery.validate.min.js"></script>
+<script src="/static/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="/static/js/plugins.js"></script>
+<script src="/static/js/main.js"></script>
+
+<!-- Scroll-triggered Animation Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Stock Notification Functionality
+    const stockNotification = document.getElementById('stock-notification');
+    const closeBtn = document.getElementById('close-stock-notification');
+    
+    // Show notification after 2 seconds
+    setTimeout(() => {
+        if (stockNotification) {
+            stockNotification.style.transform = 'translateX(0)';
+            stockNotification.style.opacity = '1';
+        }
+    }, 2000);
+    
+    // Close notification functionality
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            if (stockNotification) {
+                stockNotification.style.transform = 'translateX(-100%)';
+                stockNotification.style.opacity = '0';
+                setTimeout(() => {
+                    stockNotification.style.display = 'none';
+                }, 500);
+            }
+        });
+        
+        // Hover effect for close button
+        closeBtn.addEventListener('mouseenter', function() {
+            this.style.background = 'rgba(255, 0, 0, 0.1)';
+            this.style.color = '#ff0000';
+        });
+        
+        closeBtn.addEventListener('mouseleave', function() {
+            this.style.background = 'none';
+            this.style.color = '#666';
+        });
+    }
+    
+    // Create intersection observer for hero section animations
+    const heroSections = document.querySelectorAll('.slider-area .single-slider');
+    const heroTexts = document.querySelectorAll('.hero-text-animate');
+    
+    // Create intersection observer for about section animations
+    const aboutSection = document.querySelector('.about-area2');
+    const aboutImg = document.querySelector('.about-img-animate');
+    const aboutText = document.querySelector('.about-text-animate');
+    const aboutIcons = document.querySelector('.icon-about-animate');
+    
+    // Create intersection observer for products section animations
+    const productsSection = document.querySelector('.products-area');
+    const productItems = document.querySelectorAll('.product-animate');
+    
+    const observerOptions = {
+        threshold: 0.2, // Trigger when 20% of the section is visible
+        rootMargin: '0px 0px -50px 0px' // Trigger a bit before the element fully enters viewport
+    };
+    
+    // � CLEAN HERO ANIMATIONS (SAME AS ABOUT SECTION) �
+    function resetHeroAnimations(heroSection) {
+        const heroTitle = heroSection.querySelector('.hero-title-animate');
+        const heroSubtitle = heroSection.querySelector('.hero-subtitle-animate');
+        
+        if (heroTitle) {
+            heroTitle.classList.remove('animate');
+        }
+        
+        if (heroSubtitle) {
+            heroSubtitle.classList.remove('animate');
+        }
+    }
+
+    function triggerHeroAnimation(heroSection) {
+        const heroTitle = heroSection.querySelector('.hero-title-animate');
+        const heroSubtitle = heroSection.querySelector('.hero-subtitle-animate');
+        
+        // First reset
+        resetHeroAnimations(heroSection);
+        
+        // Then trigger with small delay
+        setTimeout(() => {
+            if (heroTitle) {
+                heroTitle.classList.add('animate');
+            }
+            
+            if (heroSubtitle) {
+                heroSubtitle.classList.add('animate');
+            }
+        }, 50);
+    }
+
+    // Simple Hero Observer (same as about section)
+    const heroObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                triggerHeroAnimation(entry.target);
+            } else {
+                resetHeroAnimations(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // About section observer
+    const aboutObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Reset and restart animations when section comes into view
+                resetAndAnimateAboutSection();
+            } else {
+                // Reset animations when section leaves view (optional)
+                resetAboutAnimations();
+            }
+        });
+    }, observerOptions);
+    
+    // Products section observer
+    const productsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                resetAndAnimateProductsSection();
+            } else {
+                resetProductAnimations();
+            }
+        });
+    }, observerOptions);
+    
+    // Observe hero sections with clean animations
+    heroSections.forEach(section => {
+        heroObserver.observe(section);
+    });
+    
+    // Observe the about section
+    if (aboutSection) {
+        aboutObserver.observe(aboutSection);
+    }
+    
+    // Observe the products section
+    if (productsSection) {
+        productsObserver.observe(productsSection);
+    }
+    
+    function resetHeroAnimations(heroTextElement) {
+        const heroTitle = heroTextElement.querySelector('.hero-title-animate');
+        const heroSubtitle = heroTextElement.querySelector('.hero-subtitle-animate');
+        
+        if (heroTitle) {
+            heroTitle.classList.remove('animate');
+        }
+        
+        if (heroSubtitle) {
+            heroSubtitle.classList.remove('animate');
+        }
+    }
+    
+    function resetAndAnimateHeroSection(heroTextElement) {
+        // First reset everything
+        resetHeroAnimations(heroTextElement);
+        
+        // Then trigger animations with slight delay
+        setTimeout(() => {
+            const heroTitle = heroTextElement.querySelector('.hero-title-animate');
+            const heroSubtitle = heroTextElement.querySelector('.hero-subtitle-animate');
+            
+            if (heroTitle) {
+                heroTitle.classList.add('animate');
+            }
+            
+            if (heroSubtitle) {
+                heroSubtitle.classList.add('animate');
+            }
+        }, 50);
+    }
+    
+    function resetAboutAnimations() {
+        // Remove animation classes and reset styles
+        if (aboutImg) {
+            aboutImg.classList.remove('animate');
+            aboutImg.style.opacity = '0';
+            aboutImg.style.transform = 'translateX(-100px)';
+        }
+        
+        if (aboutText) {
+            aboutText.classList.remove('animate');
+            aboutText.style.opacity = '0';
+            aboutText.style.transform = 'translateX(100px)';
+            
+            // Reset text elements
+            const h2 = aboutText.querySelector('h2');
+            const h3 = aboutText.querySelector('h3');
+            const p = aboutText.querySelector('p');
+            
+            if (h2) {
+                h2.style.opacity = '0';
+                h2.style.transform = 'translateX(80px)';
+            }
+            if (h3) {
+                h3.style.opacity = '0';
+                h3.style.transform = 'translateX(60px)';
+            }
+            if (p) {
+                p.style.opacity = '0';
+                p.style.transform = 'translateX(40px)';
+            }
+        }
+        
+        if (aboutIcons) {
+            aboutIcons.classList.remove('animate');
+            aboutIcons.style.opacity = '0';
+            aboutIcons.style.transform = 'translateY(30px)';
+            
+            // Reset icon images
+            const icons = aboutIcons.querySelectorAll('img');
+            icons.forEach(icon => {
+                icon.style.opacity = '0';
+                icon.style.transform = 'scale(0.5)';
+            });
+        }
+    }
+    
+    function resetAndAnimateAboutSection() {
+        // First reset everything
+        resetAboutAnimations();
+        
+        // Then trigger animations with slight delay to ensure reset is complete
+        setTimeout(() => {
+            if (aboutImg) {
+                aboutImg.classList.add('animate');
+            }
+            
+            if (aboutText) {
+                aboutText.classList.add('animate');
+            }
+            
+            if (aboutIcons) {
+                aboutIcons.classList.add('animate');
+            }
+        }, 50); // Small delay to ensure CSS reset is applied
+    }
+    
+    // Products animation functions with icon animation
+    function resetProductAnimations() {
+        productItems.forEach(item => {
+            item.classList.remove('animate');
+        });
+        
+        // Reset icon animation
+        const productIcon = document.querySelector('.products-animated-icon');
+        if (productIcon) {
+            productIcon.style.animation = 'none';
+            productIcon.style.opacity = '0';
+            productIcon.style.transform = 'translateY(-100px) scale(0.3) rotate(-15deg)';
+        }
+    }
+    
+    function resetAndAnimateProductsSection() {
+        // First reset everything
+        resetProductAnimations();
+        
+        // Then trigger animations with slight delay
+        setTimeout(() => {
+            productItems.forEach(item => {
+                item.classList.add('animate');
+            });
+            
+            // Trigger icon drop animation every time
+            const productIcon = document.querySelector('.products-animated-icon');
+            if (productIcon) {
+                productIcon.style.animation = 'iconDropIn 2s ease-out 0.5s both';
+            }
+        }, 100);
+    }
+    
+    // Initial check for hero sections in case they are already in view when page loads
+    setTimeout(() => {
+        heroSections.forEach(section => {
+            const sectionRect = section.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            if (sectionRect.top < windowHeight * 0.8 && sectionRect.bottom > 0) {
+                const heroText = section.querySelector('.hero-text-animate');
+                if (heroText) {
+                    resetAndAnimateHeroSection(heroText);
+                }
+            }
+        });
+        
+        // Initial check for about section
+        if (aboutSection) {
+            const aboutRect = aboutSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            // If about section is in view on page load, trigger animations
+            if (aboutRect.top < windowHeight * 0.8 && aboutRect.bottom > 0) {
+                resetAndAnimateAboutSection();
+            }
+        }
+        
+        // Initial check for products section
+        if (productsSection) {
+            const productsRect = productsSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            // If products section is in view on page load, trigger animations
+            if (productsRect.top < windowHeight * 0.8 && productsRect.bottom > 0) {
+                resetAndAnimateProductsSection();
+            }
+        }
+    }, 100);
+
+    // Initial hero animation check (clean version)
+    setTimeout(() => {
+        heroSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                triggerHeroAnimation(section);
+            }
+        });
+    }, 500);
+
+    //  OTO MINIMAL LIVE PRICE ANIMATION 📈
+    function animateStockPrice() {
+        const priceElements = document.querySelectorAll('.live-price');
+        
+        // Realistic price fluctuation around 5.62
+        const basePrice = 5.62;
+        const fluctuation = (Math.random() - 0.5) * 0.20; // ±0.10 euro range
+        const newPrice = (basePrice + fluctuation).toFixed(2);
+        
+        // Update price with smooth animation
+        priceElements.forEach(element => {
+            element.style.transform = 'scale(1.1)';
+            element.style.color = '#5AAC4E';
+            element.style.textShadow = '0 4px 15px rgba(90, 172, 78, 0.5)';
+            
+            setTimeout(() => {
+                element.textContent = newPrice.replace('.', ',');
+                element.style.transform = 'scale(1)';
+                element.style.color = '#0D210B';
+                element.style.textShadow = 'none';
+            }, 400);
+        });
+    }
+    
+    // Start stock animation every 6-10 seconds
+    setInterval(() => {
+        animateStockPrice();
+    }, Math.random() * 4000 + 6000);
+    
+    // Initial animation after 3 seconds
+    setTimeout(() => {
+        animateStockPrice();
+    }, 3000);
+
+    // 🎬 CLEAN SLIDESHOW FUNCTIONALITY 🎬
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+    let isTransitioning = false;
+    
+    function showSlide(index) {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        
+        // Remove active class from all slides and dots
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+        
+        // Add active class to current slide and dot
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        
+        currentSlide = index;
+        
+        // Reset transition lock after animation completes
+        setTimeout(() => {
+            isTransitioning = false;
+        }, 1000);
+    }
+    
+    function nextSlide() {
+        const next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    }
+    
+    // Auto-advance slideshow every 3 seconds
+    setInterval(nextSlide, 3000);
+    
+    // Add click functionality to dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            if (currentSlide !== index) {
+                showSlide(index);
+            }
+        });
+    });
+    
+    // Initialize first slide
+    if (slides.length > 0) {
+        showSlide(0);
+    }
+    
+    // Add touch/swipe support for mobile
+    let startX = 0;
+    let endX = 0;
+    
+    const slideshowContainer = document.querySelector('.slideshow-wrapper');
+    if (slideshowContainer) {
+        slideshowContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+        
+        slideshowContainer.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = startX - endX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - next slide
+                    nextSlide();
+                } else {
+                    // Swipe right - previous slide
+                    const prev = (currentSlide - 1 + slides.length) % slides.length;
+                    showSlide(prev);
+                }
+            }
+        }
+    }
+
+    // 🎯 PROFESSIONAL COUNTERS ANIMATION SYSTEM 🎯
+    
+    // Create intersection observer for counters section
+    const countersSection = document.querySelector('.counters-area');
+    const counterItems = document.querySelectorAll('.counter-animate');
+    
+    const countersObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                resetAndAnimateCountersSection();
+            }
+        });
+    }, {
+        threshold: 0.3,
+        rootMargin: '0px 0px -100px 0px'
+    });
+    
+    if (countersSection) {
+        countersObserver.observe(countersSection);
+    }
+    
+    function resetAndAnimateCountersSection() {
+        // First reset everything
+        counterItems.forEach(item => {
+            item.classList.remove('animate');
+        });
+        
+        // Then trigger animations with staggered delay
+        setTimeout(() => {
+            counterItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('animate');
+                }, index * 150); // 150ms delay between each counter
+            });
+            
+            // Start counting animation after all counters are visible
+            setTimeout(() => {
+                startCountingAnimation();
+            }, counterItems.length * 150 + 200);
+        }, 100);
+    }
+    
+    function startCountingAnimation() {
+        const counterNumbers = document.querySelectorAll('.counter-number');
+        
+        counterNumbers.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-count'));
+            const duration = 2500; // 2.5 seconds
+            const startTime = Date.now();
+            
+            function updateCounter() {
+                const now = Date.now();
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Easing function for smooth animation
+                const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                const currentValue = Math.floor(easeOutCubic * target);
+                
+                // Format numbers with commas for readability
+                counter.textContent = currentValue.toLocaleString();
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target.toLocaleString();
+                    
+                    // Add sparkle effect when counter completes
+                    counter.style.animation = 'sparkleEffect 0.6s ease-out';
+                    setTimeout(() => {
+                        counter.style.animation = '';
+                    }, 600);
+                }
+            }
+            
+            updateCounter();
+        });
+    }
+    
+    // Add sparkle effect keyframes
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes sparkleEffect {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); text-shadow: 0 0 20px rgba(90, 172, 78, 0.8); }
+            100% { transform: scale(1); }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Messages Slideshow Control JavaScript
+    const messageButtons = document.querySelectorAll('.message-btn');
+    const presidentSection = document.querySelector('.presidential-message-area');
+    const ceoSection = document.querySelector('.ceo-message-area');
+    
+    // Initially hide CEO section
+    if (ceoSection) {
+        ceoSection.style.display = 'none';
+    }
+    
+    messageButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            
+            // Remove active class from all buttons
+            messageButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.background = 'transparent';
+                btn.style.color = '#2E7D32';
+                btn.style.border = '2px solid #2E7D32';
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            this.style.background = '#2E7D32';
+            this.style.color = 'white';
+            this.style.border = 'none';
+            
+            // Show/hide sections with smooth transition
+            if (target === 'president') {
+                if (presidentSection) {
+                    presidentSection.style.display = 'block';
+                    presidentSection.style.opacity = '0';
+                    setTimeout(() => {
+                        presidentSection.style.transition = 'opacity 0.5s ease';
+                        presidentSection.style.opacity = '1';
+                    }, 10);
+                }
+                if (ceoSection) {
+                    ceoSection.style.transition = 'opacity 0.5s ease';
+                    ceoSection.style.opacity = '0';
+                    setTimeout(() => {
+                        ceoSection.style.display = 'none';
+                    }, 500);
+                }
+            } else if (target === 'ceo') {
+                if (ceoSection) {
+                    ceoSection.style.display = 'block';
+                    ceoSection.style.opacity = '0';
+                    setTimeout(() => {
+                        ceoSection.style.transition = 'opacity 0.5s ease';
+                        ceoSection.style.opacity = '1';
+                    }, 10);
+                }
+                if (presidentSection) {
+                    presidentSection.style.transition = 'opacity 0.5s ease';
+                    presidentSection.style.opacity = '0';
+                    setTimeout(() => {
+                        presidentSection.style.display = 'none';
+                    }, 500);
+                }
+            }
+        });
+        
+        // Add hover effects
+        button.addEventListener('mouseenter', function() {
+            if (!this.classList.contains('active')) {
+                this.style.background = '#2E7D32';
+                this.style.color = 'white';
+            }
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            if (!this.classList.contains('active')) {
+                this.style.background = 'transparent';
+                this.style.color = '#2E7D32';
+            }
+        });
+    });
+});
+</script>
+
+<script>
+// Auto-highlight current page in navbar
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('#navigation .nav-link');
+    var currentPage = window.location.pathname.split('/').pop();
+    navLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href === currentPage || (href === 'index.html' && (currentPage === '' || currentPage === 'index.html'))) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+</script>
+</body>
+</html>

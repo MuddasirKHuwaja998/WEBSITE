@@ -1,0 +1,776 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Chi Siamo | Otofarma SpA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    
+    <!-- Stock Notification Popup - Fixed Position -->
+    <div id="stock-notification" class="stock-notification-popup" style="position: fixed; top: 80px; right: 20px; width: 140px; background: linear-gradient(135deg, #ffffff, #f8fffe); border: 1px solid #2E7D32; border-radius: 8px; padding: 8px; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2); z-index: 9999; transform: translateX(100%); opacity: 0; transition: all 0.5s ease;">
+        <!-- Close Button -->
+        <button id="close-stock-notification" style="position: absolute; top: 2px; right: 2px; background: none; border: none; color: #666; font-size: 12px; cursor: pointer; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s ease;">
+            ×
+        </button>
+        
+        <!-- Compact Header -->
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+            <div style="width: 20px; height: 20px; background: linear-gradient(135deg, #2E7D32, #388E3C); border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-right: 6px;">
+                <span style="color: white; font-weight: 900; font-size: 8px; font-family: 'Poppins', sans-serif;">OTO</span>
+            </div>
+            <div style="color: #2E7D32; font-weight: 600; font-size: 9px;">
+                📈 Live
+            </div>
+        </div>
+        
+        <!-- Price Only -->
+        <div style="text-align: center; margin-bottom: 6px;">
+            <div style="font-size: 14px; font-weight: 700; color: #1B5E20;">€5.48</div>
+            <div style="font-size: 7px; color: #666;">BIT: OTO</div>
+        </div>
+        
+        <!-- Mini Action Button -->
+        <button onclick="window.open('https://www.google.com/search?q=otofarmaspa+stock+price&rlz=1C1CHBF_enIT1159IT1159&oq=OTOFAR&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg8MgkIARBFGDkYgAQyBggCEEUYOzIOCAMQRRgnGDsYgAQYigUyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI4MjBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8', '_blank')" style="width: 100%; background: linear-gradient(135deg, #2E7D32, #388E3C); color: white; border: none; padding: 4px; border-radius: 4px; font-size: 7px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+            Dettagli
+        </button>
+    </div>
+    <header>
+        <!--? Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt="" style="max-width: 80%; height: auto;"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav> 
+                                        <ul id="navigation" class="professional-nav">
+                                            <li><a href="index.html" class="nav-link">Home</a></li>
+                                            <li><a href="about.html" class="nav-link">Chi Siamo</a></li>
+                                            <li><a href="services.html" class="nav-link">Servizi</a></li>
+                                            <li><a href="blog.html" class="nav-link">Prodotti</a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html" class="nav-link">Prodotti</a></li>
+                                                    <li><a href="blog_details.html" class="nav-link">Dettagli Prodotti</a></li>
+                                                    <li><a href="elements.html" class="nav-link">Elementi</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html" class="nav-link">Contatti</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-15">
+                                    <a href="https://voice-aibot.onrender.com/" class="btn header-btn" target="_blank">
+                                        Parla con Assistente AI
+                                        <img src="assets/img/gallery/ai-technology.png" alt="AI" style="width: 22px; height: 22px; margin-left: 8px; vertical-align: middle;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    
+    <main>
+                            </main>
+    
+    <footer>
+        <div class="footer-wrappr section-bg3" data-background="assets/img/gallery/footer-bg.png">
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row justify-content-between" style="position: relative;">
+                        <!-- Section 1: Job Application Form -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-section-animate" style="position: relative; animation: fadeInLeft 1s ease-out;">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle mb-30">
+                                    <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">Lavora con Noi</h4>
+                                    <p style="color: #666; font-size: 1rem; margin-bottom: 25px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Unisciti al nostro team di professionisti nell'innovazione audiologica</p>
+                                </div>
+                                <!-- Job Application Form -->
+                                <div class="job-application-form form-animate">
+                                    <form action="mailto:info@otofarma.it" method="post" enctype="text/plain" class="job-form">
+                                        <div class="form-group mb-18">
+                                            <input type="text" name="nome" placeholder="Nome Completo *" required style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                        </div>
+                                        <div class="form-group mb-18">
+                                            <input type="email" name="email" placeholder="Email *" required style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                        </div>
+                                        <div class="form-group mb-18">
+                                            <input type="tel" name="telefono" placeholder="Telefono" style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                        </div>
+                                        <div class="form-group mb-25">
+                                            <textarea name="messaggio" rows="4" placeholder="Presentati e descrivi la tua esperienza..." style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; resize: vertical; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.5;"></textarea>
+                                        </div>
+                                        <button type="submit" class="submit-btn-animate" style="background: linear-gradient(135deg, #2E7D32, #388E3C); color: white; border: none; padding: 15px 30px; border-radius: 30px; font-weight: 700; font-size: 1rem; cursor: pointer; transition: all 0.4s ease; text-transform: uppercase; letter-spacing: 0.8px; width: 100%; font-family: 'Poppins', sans-serif; box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3);">
+                                            Invia Candidatura
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Vertical Separator Line -->
+                            <div class="vertical-separator separator-animate" style="position: absolute; right: -1px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, transparent, #2E7D32, transparent); opacity: 0.7; animation: pulse 2s infinite;"></div>
+                        </div>
+
+                        <!-- Section 2: Google Maps Location -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-section-animate" style="position: relative; animation: fadeInUp 1s ease-out 0.2s both;">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle mb-30">
+                                    <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">La Nostra Sede</h4>
+                                    <p style="color: #666; font-size: 1rem; margin-bottom: 25px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Visita i nostri uffici e scopri l'innovazione audiologica</p>
+                                </div>
+                                <!-- Google Maps Embed -->
+                                <div class="map-container map-animate" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2); border: 3px solid rgba(46, 125, 50, 0.15); transition: all 0.4s ease;">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4446!2d16.8769456!3d41.1171526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e8b7c5a8a573%3A0x5f5b5f5b5f5b5f5b!2sOtofarma%20SpA!5e0!3m2!1sit!2sit!4v1703851200000!5m2!1sit!2sit"
+                                        width="100%" 
+                                        height="280" 
+                                        style="border:0; border-radius: 12px;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                    <a href="https://maps.app.goo.gl/kimAKtS8GJ6HRpx17" target="_blank" style="position: absolute; top: 12px; right: 12px; background: rgba(46, 125, 50, 0.95); color: white; padding: 10px 16px; border-radius: 25px; font-size: 0.85rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);">
+                                        Apri in Maps
+                                    </a>
+                                </div>
+                                <div style="margin-top: 18px; text-align: center;">
+                                    <p style="color: #555; font-size: 0.9rem; line-height: 1.5; margin: 0; font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                        <strong style="color: #2E7D32; font-weight: 700; font-size: 1rem;">Otofarma SpA</strong><br>
+                                        <span style="color: #666; font-weight: 600;">Centro di Eccellenza Audiologica</span><br>
+                                        <span style="color: #888; font-size: 0.85rem; font-style: italic;">Clicca sulla mappa per indicazioni dettagliate</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Vertical Separator Line -->
+                            <div class="vertical-separator separator-animate" style="position: absolute; right: -1px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, transparent, #2E7D32, transparent); opacity: 0.7; animation: pulse 2s infinite 0.5s;"></div>
+                        </div>
+
+                        <!-- Section 3: Social Media Links -->
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-section-animate" style="animation: fadeInRight 1s ease-out 0.4s both;">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle mb-30">
+                                    <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">Seguici</h4>
+                                    <p style="color: #666; font-size: 1rem; margin-bottom: 30px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Rimani connesso con le nostre innovazioni e aggiornamenti</p>
+                                </div>
+                                <!-- Social Media Icons Grid -->
+                                <div class="social-media-grid social-grid-animate" style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 30px; justify-items: center;">
+                                    <!-- Instagram -->
+                                    <a href="https://www.instagram.com/otofarma_s.p.a?utm_source=ig_web_button_share_sheet&igsh=MWthM3Q0MndpaXB5Nw==" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                        <img src="assets/img/gallery/instagram.png" alt="Instagram" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                    </a>
+                                    
+                                    <!-- Facebook -->
+                                    <a href="https://www.facebook.com/share/1PW4kE1vwW/?mibextid=wwXIfr" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                        <img src="assets/img/gallery/facebook.png" alt="Facebook" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                    </a>
+                                    
+                                    <!-- LinkedIn -->
+                                    <a href="https://www.linkedin.com/company/otofarma-spa/" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                        <img src="assets/img/gallery/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                    </a>
+                                    
+                                    <!-- Email -->
+                                    <a href="mailto:info@otofarma.it" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                        <img src="assets/img/gallery/communication.png" alt="Email" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                    </a>
+                                </div>
+                                
+                                <!-- Contact Info -->
+                                <div class="contact-info-animate" style="background: rgba(46, 125, 50, 0.06); padding: 22px; border-radius: 12px; border-left: 5px solid #2E7D32; backdrop-filter: blur(5px); box-shadow: 0 6px 20px rgba(46, 125, 50, 0.1);">
+                                    <h5 style="color: #2E7D32; font-weight: 800; font-size: 1.1rem; margin-bottom: 12px; font-family: 'Poppins', sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">Contatti Diretti</h5>
+                                    <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                        <strong style="color: #2E7D32; font-weight: 700;">Email:</strong> <a href="mailto:info@otofarma.it" style="color: #555; text-decoration: none;">info@otofarma.it</a>
+                                    </p>
+                                    <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                        <strong style="color: #2E7D32; font-weight: 700;">PEC:</strong> <a href="mailto:otofarmaspa@pec.it" style="color: #555; text-decoration: none;">otofarmaspa@pec.it</a>
+                                    </p>
+                                    <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                        <strong style="color: #2E7D32; font-weight: 700;">P.IVA:</strong> 08431301210
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Company Logo Section -->
+                    <div class="row justify-content-center" style="margin-top: 40px; padding-top: 30px; border-top: 2px solid rgba(46, 125, 50, 0.1);">
+                        <div class="col-xl-12 text-center">
+                            <div class="footer-logo mb-25">
+                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt="Otofarma SpA" style="max-height: 60px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom - Copyright -->
+            <div class="footer-bottom-area" style="background: rgba(46, 125, 50, 0.05); padding: 20px 0; border-top: 1px solid rgba(46, 125, 50, 0.1);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="footer-copy-right text-center">
+                                <p style="color: #666; font-size: 0.9rem; margin: 0; font-weight: 500;">
+                                    Copyright © 2025 | <strong style="color: #2E7D32;">Otofarma SpA</strong> | P.IVA 08431301210 | 
+                                    <a href="mailto:otofarmaspa@pec.it" style="color: #2E7D32; text-decoration: none;">otofarmaspa@pec.it</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Additional CSS for Interactive Effects -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+    /* Job Application Form Styling */
+    .job-form input:focus, .job-form textarea:focus {
+        border-color: #2E7D32 !important;
+        box-shadow: 0 0 10px rgba(46, 125, 50, 0.2) !important;
+        outline: none !important;
+    }
+
+    .job-form button:hover {
+        background: linear-gradient(135deg, #1B5E20, #2E7D32) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3) !important;
+    }
+
+    /* Social Media Links Enhanced Transparent Background */
+    .social-icon-link {
+        background: transparent !important;
+        border: 3px solid rgba(46, 125, 50, 0.2) !important;
+        border-radius: 22px !important;
+        backdrop-filter: blur(10px) !important;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) !important;
+        position: relative;
+        overflow: hidden;
+        transform-origin: center;
+    }
+
+    .social-icon-link::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: radial-gradient(circle, rgba(46, 125, 50, 0.15), transparent);
+        transition: all 0.6s ease;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .social-icon-link:hover::before {
+        width: 120%;
+        height: 120%;
+    }
+
+    .social-icon-link:hover {
+        transform: translateY(-8px) scale(1.15) rotate(5deg) !important;
+        border-color: rgba(46, 125, 50, 0.6) !important;
+        box-shadow: 0 15px 40px rgba(46, 125, 50, 0.3) !important;
+        backdrop-filter: blur(20px) !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .social-icon-link img {
+        z-index: 1;
+        position: relative;
+        filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2)) !important;
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
+    }
+
+    .social-icon-link:hover img {
+        transform: scale(1.1) rotate(-3deg) !important;
+        filter: drop-shadow(0 6px 12px rgba(46, 125, 50, 0.4)) !important;
+    }
+
+    /* Footer Section High-Class Animations */
+    .footer-section-animate {
+        opacity: 1;
+        transform: translateY(0);
+        animation-fill-mode: both;
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px) scale(0.95);
+        }
+        70% {
+            opacity: 0.7;
+            transform: translateX(5px) scale(1.02);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+        }
+        70% {
+            opacity: 0.7;
+            transform: translateY(-5px) scale(1.02);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(50px) scale(0.95);
+        }
+        70% {
+            opacity: 0.7;
+            transform: translateX(-5px) scale(1.02);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 0.7;
+            box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.4);
+        }
+        50% {
+            opacity: 1;
+            box-shadow: 0 0 0 10px rgba(46, 125, 50, 0);
+        }
+    }
+    </style>
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/slicknav.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/price-range.js"></script>
+    <script src="assets/js/jquery.scrollUp.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.paroller.min.js"></script>
+    <script src="assets/js/gijgo.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-cat text-center mb-30">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team1.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">Your daily meal plan</a></h5>
+                            <p>Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi 
+                            sem ut ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-cat text-center mb-30">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team2.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">Muscle Gain</a></h5>
+                            <p>Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi 
+                            sem ut ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-cat text-center mb-30">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">Weight Loss</a></h5>
+                            <p>Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi 
+                            sem ut ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--? Team End-->
+    <!-- Services End-->
+    <!--? About-2 Area Start -->
+    <div class="about-area2 section-padding40">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <!-- about-img -->
+                    <div class="about-img ">
+                        <img src="assets/img/gallery/about.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="about-caption mb-50">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-35">
+                            <h2>Create a healthy 
+                            life you love!</h2>
+                        </div>
+                        <p class="pera-top mb-40">Almost before we knew it, we had left the ground</p>
+                        <p class="pera-bottom mb-30">Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
+                            dignissim dolor, a pretium mi sem ut ipsum. Fusce
+                        fermentum. Pellentesque libero tortor, tincidunt et.</p>
+                        <div class="icon-about">
+                         <img src="assets/img/icon/about1.svg" alt="" class=" mr-20">
+                         <img src="assets/img/icon/about2.svg" alt="">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!--? Testimonial Area Start -->
+ <section class="testimonial-area testimonial-padding fix">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class=" col-lg-9">
+                <div class="about-caption">
+                    <!-- Testimonial Start -->
+                    <div class="h1-testimonial-active dot-style">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial position-relative">
+                            <div class="testimonial-caption">
+                                <img src="assets/img/icon/quotes-sign.png" alt="" class="quotes-sign">
+                                <p>"The automated process starts as soon as your clothe go into the machine. This site outcome is gleaming clothe. Placeholder text commonly used. In publishing and graphic.</p>
+                            </div>
+                            <!-- founder -->
+                            <div class="testimonial-founder d-flex align-items-center">
+                                <div class="founder-img">
+                                    <img src="assets/img/icon/testimonial.png" alt="">
+                                </div>
+                                <div class="founder-text">
+                                    <span>Robart Brown</span>
+                                    <p>Creative designer at Colorlib</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial position-relative">
+                            <div class="testimonial-caption">
+                                <img src="assets/img/icon/quotes-sign.png" alt="" class="quotes-sign">
+                                <p>"The automated process starts as soon as your clothe go into the machine. This site outcome is gleaming clothe. Placeholder text commonly used. In publishing and graphic.</p>
+                            </div>
+                            <!-- founder -->
+                            <div class="testimonial-founder d-flex align-items-center">
+                                <div class="founder-img">
+                                    <img src="assets/img/icon/testimonial.png" alt="">
+                                </div>
+                                <div class="founder-text">
+                                    <span>Robart Brown</span>
+                                    <p>Creative designer at Colorlib</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial End -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--? Testimonial Area End -->
+<!--? video_start -->
+<div class="container">
+    <div class="video-area section-bg2 d-flex align-items-center"  data-background="assets/img/gallery/video-bg.png">
+        <div class="video-wrap position-relative">
+            <div class="video-icon" >
+                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video_end -->      
+<!--? Blog Area Start -->
+<section class="home-blog-area section-padding30">
+    <div class="container">
+        <!-- Section Tittle -->
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-9 col-sm-10">
+                <div class="section-tittle text-center mb-100">
+                    <h2>Latest Blog</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="home-blog-single mb-40">
+                    <div class="blog-img-cap">
+                        <div class="blog-img">
+                            <img src="assets/img/gallery/blog1.png" alt="">
+                        </div>
+                        <div class="blog-cap">
+                            <h3><a href="blog_details.html">Your daily meal plan</a></h3>
+                            <P>Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi 
+                            sem ut ipsum.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="home-blog-single mb-40">
+                    <div class="blog-img-cap">
+                        <div class="blog-img">
+                            <img src="assets/img/gallery/blog2.png" alt="">
+                        </div>
+                        <div class="blog-cap">
+                            <h3><a href="blog_details.html">Food is a great source of  medicine</a></h3>
+                            <P>Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi 
+                            sem ut ipsum.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="home-blog-single mb-40">
+                    <div class="blog-img-cap">
+                        <div class="blog-img">
+                            <img src="assets/img/gallery/blog3.png" alt="">
+                        </div>
+                        <div class="blog-cap">
+                            <h3><a href="blog_details.html">Everyday diet plan</a></h3>
+                            <P>Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi 
+                            sem ut ipsum.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Area End -->
+<!--? About Law Start-->
+<section class="about-low-area mt-30">
+    <div class="container">
+        <div class="about-cap-wrapper">
+            <div class="row">
+                <div class="col-xl-5  col-lg-6 col-md-10 offset-xl-1">
+                    <div class="about-caption mb-50">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-35">
+                            <h2>100% satisfaction guaranteed.</h2>
+                        </div>
+                        <p>Almost before we knew it, we had left the ground</p>
+                        <a href="about.html" class="border-btn">Make an Appointment</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <!-- about-img -->
+                    <div class="about-img">
+                        <div class="about-font-img">
+                            <img src="assets/img/gallery/about2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Law End-->
+</main>
+<footer>
+    <div class="footer-wrappr section-bg3" data-background="assets/img/gallery/footer-bg.png">
+        <div class="footer-area footer-padding ">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo mb-25">
+                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            </div>
+                            <d iv class="header-area">
+                                <div class="main-header main-header2">
+                                    <div class="menu-main d-flex align-items-center justify-content-start">
+                                        <!-- Main-menu -->
+                                        <div class="main-menu main-menu2">
+                                            <nav> 
+                                                <ul>
+                                                    <li><a href="index.html">Home</a></li>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="services.html">Services</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </d>
+                            <!-- social -->
+                            <div class="footer-social mt-50">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-footer-caption">
+                            <div class="footer-tittle mb-50">
+                                <h4>Subscribe newsletter</h4>
+                            </div>
+                            <!-- Form -->
+                            <div class="footer-form">
+                                <div id="mc_embed_signup">
+                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                        <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your email'">
+                                        <div class="form-icon">
+                                            <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
+                                                Subscribe
+                                            </button>
+                                        </div>
+                                        <div class="mt-10 info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="footer-tittle">
+                                <div class="footer-pera">
+                                    <p>Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium misem ut ipsum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row">
+                        <div class="col-xl-10 ">
+                            <div class="footer-copy-right">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Scroll Up -->
+  <div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- Jquery Mobile Menu -->
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/animated.headline.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+
+<!-- Date Picker -->
+<script src="./assets/js/gijgo.min.js"></script>
+<!-- Nice-select, sticky -->
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+<script src="./assets/js/jquery.sticky.js"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.countdown.min.js"></script>
+<script src="./assets/js/hover-direction-snake.min.js"></script>
+
+<!-- contact js -->
+<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/jquery.form.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

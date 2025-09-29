@@ -1,0 +1,800 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Otofarma SpA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/slicknav.css">
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel="stylesheet" href="/static/css/slick.css">
+    <link rel="stylesheet" href="/static/css/nice-select.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+    .nav-link.active {
+        color: #43b36a !important;
+        font-weight: 700;
+        border-bottom: 2.5px solid #43b36a;
+        background: #e8f6ee;
+        border-radius: 6px 6px 0 0;
+        box-shadow: 0 2px 8px #43b36a22;
+    }
+    .nav-link.active:hover, .nav-link.active:focus {
+        color: #43b36a !important;
+        background: #e8f6ee;
+        border-bottom: 2.5px solid #43b36a;
+        box-shadow: 0 2px 8px #43b36a22;
+    }
+    </style>
+</head>
+
+    <header>
+        <!--? Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid" style="background: #e8f6ee;">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="/"><img src="/static/img/logo/logo.png" alt="" style="max-width: 80%; height: auto;"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav> 
+                                        <ul id="navigation" class="professional-nav">
+                                            <li><a href="/" class="nav-link">Home</a></li>
+                                            <li><a href="/about" class="nav-link">Chi Siamo</a></li>
+                                            <li><a href="/services" class="nav-link">Prodotti</a></li>
+                                            <li><a href="/blog" class="nav-link">News</a></li>
+                                            <li><a href="/contact" class="nav-link active">Contatti</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-15">
+                                    <a href="https://voice-aibot.onrender.com/" class="btn header-btn" target="_blank">
+                                        Parla con Assistente AI
+                                        <img src="/static/img/gallery/ai-technology.png" alt="AI" style="width: 22px; height: 22px; margin-left: 8px; vertical-align: middle;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+       
+        <!-- Animated Green Separator -->
+        <script>
+        // Highlight current page in navbar with hover color
+        document.addEventListener('DOMContentLoaded', function() {
+            var navLinks = document.querySelectorAll('.professional-nav .nav-link');
+            var currentPath = window.location.pathname;
+            navLinks.forEach(function(link) {
+                if (link.getAttribute('href') === currentPath ||
+                    (link.getAttribute('href') === '/' && currentPath === '/')) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+        </script>
+        <div class="green-separator"></div>
+        <style>
+            .booking-header {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 30px;
+                margin-bottom: 0px;
+            }
+            .booking-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 32px;
+                width: 100%;
+                max-width: 1200px;
+            }
+            .booking-box {
+                background: linear-gradient(135deg, #e8f6ee 60%, #fff 100%);
+                border: 3px solid #bdbdbd;
+                border-radius: 18px;
+                box-shadow: 0 6px 24px rgba(60, 120, 60, 0.08), 0 1.5px 6px rgba(60, 120, 60, 0.04);
+                width: 220px;
+                min-width: 220px;
+                height: 220px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 24px 16px 16px 16px;
+                text-align: center;
+                position: relative;
+                transition: box-shadow 0.3s, border-color 0.3s;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .booking-box::before {
+                content: "";
+                position: absolute;
+                left: 0; top: 0; bottom: 0;
+                width: 0%;
+                background: linear-gradient(90deg, #1fa463 0%, #1fa463 100%);
+                opacity: 0.12;
+                z-index: 1;
+                transition: width 0.7s cubic-bezier(.77,0,.18,1);
+            }
+            .booking-box:hover::before {
+                width: 100%;
+                opacity: 0.18;
+            }
+            .booking-box:hover {
+                box-shadow: 0 8px 32px rgba(31,164,99,0.18), 0 2px 8px rgba(31,164,99,0.10);
+                border-color: #1fa463;
+            }
+            .booking-box h3, .booking-box p, .booking-icon {
+                position: relative;
+                z-index: 2;
+            }
+            .booking-icon {
+                width: 48px;
+                height: 48px;
+                margin-bottom: 12px;
+                margin-top: 2px;
+                filter: drop-shadow(0 2px 4px rgba(31,164,99,0.10));
+                transition: transform 0.4s cubic-bezier(.77,0,.18,1);
+            }
+            .booking-box:hover .booking-icon {
+                transform: scale(1.12) rotate(-6deg);
+            }
+            .booking-box h3 {
+                font-size: 1.18rem;
+                font-weight: 700;
+                color: #1fa463;
+                margin-bottom: 8px;
+                margin-top: 0;
+                letter-spacing: 0.5px;
+                font-family: 'Montserrat', Arial, sans-serif;
+                text-shadow: 0 1px 0 #e8f6ee;
+            }
+            .booking-box p {
+                font-size: 0.98rem;
+                color: #444;
+                margin-bottom: 0;
+                margin-top: 0;
+                font-family: 'Montserrat', Arial, sans-serif;
+                line-height: 1.35;
+            }
+            .booking-box:active {
+                box-shadow: 0 2px 8px rgba(31,164,99,0.22);
+                border-color: #0d6b3b;
+            }
+            @media (max-width: 900px) {
+                .booking-row {
+                    gap: 18px;
+                }
+                .booking-box {
+                    width: 160px;
+                    min-width: 160px;
+                    height: 160px;
+                    padding: 16px 8px 8px 8px;
+                }
+                .booking-icon {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            @media (max-width: 600px) {
+                .booking-row {
+                    flex-direction: column;
+                    gap: 18px;
+                    align-items: center;
+                }
+                .booking-box {
+                    width: 90vw;
+                    min-width: 0;
+                    height: 120px;
+                }
+            }
+            /* Animated Green Separator */
+            .green-separator {
+                width: 100%;
+                height: 6px;
+                margin: 32px 0 18px 0;
+                background: linear-gradient(90deg, #1fa463 0%, #b6e7c7 100%);
+                border-radius: 3px;
+                box-shadow: 0 2px 8px rgba(31,164,99,0.10);
+                position: relative;
+                overflow: hidden;
+            }
+            .green-separator::after {
+                content: "";
+                position: absolute;
+                left: -40%;
+                top: 0; bottom: 0;
+                width: 40%;
+                background: linear-gradient(90deg, #1fa463 0%, #b6e7c7 100%);
+                opacity: 0.5;
+                animation: separator-move 2.8s linear infinite;
+            }
+            @keyframes separator-move {
+                0% { left: -40%; }
+                100% { left: 100%; }
+            }
+        </style>
+        <!-- Hero Section Start -->
+    <section class="hero-section-contact" style="width:100%; min-height:420px; background: #43b36a; display: flex; align-items: center; position: relative;">
+            <div style="width: 650px; min-width: 300px; max-width: 900px; height: 100%; display: flex; align-items: center; justify-content: flex-start; padding-left: 0px;">
+                <img src="/static/img/gallery/new.png" alt="Hero Left" style="height: 98%; max-height:600px; width: 100%; object-fit: contain; object-position: left; display: block;">
+            </div>
+            <div style="flex:1; display: flex; align-items: center; justify-content: center;">
+                <div style="font-family: Arial, sans-serif; font-size: 1.25rem; color: #fff; font-weight: 600; letter-spacing: 1px; text-align: center; max-width: 520px;">
+                    <span class="hero-animated-text" style="display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.35rem; color: #fff; font-weight: 600; letter-spacing: 1px; text-align: center; white-space: nowrap; margin-bottom: 10px;">
+                        <div style="width:100%; text-align:center; margin-bottom:8px;">
+                            <img class="hero-logo-animated" src="/static/img/logo/logo2_footer.png" alt="Otofarma Logo" style="height: 52px; vertical-align: middle;">
+                            <style>
+                            .hero-logo-animated {
+                                animation: heroLogoSlide 1.6s cubic-bezier(.77,0,.18,1) 0.2s both;
+                            }
+                            @keyframes heroLogoSlide {
+                                0% { opacity: 0; transform: translateX(80px); }
+                                80% { opacity: 1; transform: translateX(-8px); }
+                                100% { opacity: 1; transform: translateX(0); }
+                            }
+                            </style>
+                        </div>
+                        Perdita dell'udito? Contatta <span style="color:#fff; font-weight:700;">Otofama</span>!
+                    </span>
+                    <span style="display: flex; justify-content: center; gap: 24px; align-items: center; margin-top: 2px;">
+                        <a href="https://goo.gl/maps/2QwQwQwQwQwQwQwQ8" target="_blank" class="hero-icon-link" style="display:inline-block;"><img src="/static/img/gallery/map.png" alt="Mappa" class="hero-icon-img" style="width:38px; height:38px; vertical-align:middle;"></a>
+                        <a href="https://voice-aibot.onrender.com/" target="_blank" class="hero-icon-link" style="display:inline-block;"><img src="/static/img/gallery/ai-technology.png" alt="AI" class="hero-icon-img" style="width:38px; height:38px; vertical-align:middle;"></a>
+                        <a href="https://www.facebook.com/otofarma/" target="_blank" class="hero-icon-link" style="display:inline-block;"><img src="/static/img/gallery/facebook.png" alt="Facebook" class="hero-icon-img" style="width:38px; height:38px; vertical-align:middle;"></a>
+                        <a href="https://www.instagram.com/otofarma/" target="_blank" class="hero-icon-link" style="display:inline-block;"><img src="/static/img/gallery/instagram.png" alt="Instagram" class="hero-icon-img" style="width:38px; height:38px; vertical-align:middle;"></a>
+                        <a href="https://www.linkedin.com/company/otofarma/" target="_blank" class="hero-icon-link" style="display:inline-block;"><img src="/static/img/gallery/linkedin.png" alt="LinkedIn" class="hero-icon-img" style="width:38px; height:38px; vertical-align:middle;"></a>
+                    </span>
+                    <style>
+                    .hero-icon-link .hero-icon-img {
+                        transition: transform 0.3s, box-shadow 0.3s;
+                    }
+                    .hero-icon-link:hover .hero-icon-img {
+                        transform: scale(1.18) rotate(-8deg);
+                        box-shadow: 0 0 16px #43b36a88, 0 0 6px #fff;
+                    }
+                    </style>
+                    </span>
+                    <style>
+                    .hero-animated-text {
+                        animation: heroTextSlide 1.6s cubic-bezier(.77,0,.18,1) 0.2s both;
+                    }
+                    @keyframes heroTextSlide {
+                        0% { opacity: 0; transform: translateX(-80px); }
+                        80% { opacity: 1; transform: translateX(8px); }
+                        100% { opacity: 1; transform: translateX(0); }
+                    }
+                    </style>
+                </div>
+            </div>
+                <div style="flex:1; display: flex; justify-content: center; align-items: center;">
+                    <div style="width: 700px; min-width: 300px; max-width: 900px; height: 100%; display: flex; align-items: center; justify-content: flex-start;">
+                        <img src="/static/img/gallery/BGHERO.png" alt="Hero Center" style="height: 98%; max-height:600px; width: 100%; object-fit: contain; object-position: left; display: block;">
+                    </div>
+                </div>
+                <div style="width: 800px; min-width: 400px; max-width: 1200px; height: 100%; display: flex; align-items: center; justify-content: flex-end; padding-right: 32px;">
+                    <img src="/static/img/gallery/new.png" alt="Hero Right" style="height: 98%; max-height:600px; width: 100%; object-fit: contain; object-position: right; display: block;">
+                </div>
+        </section>
+        <!-- Animated thin green separator line -->
+        <div class="animated-separator" style="width:100%; height:4px; background:linear-gradient(90deg, transparent, #43b36a 60%, transparent); margin:24px 0; animation: separatorPulse 2s infinite alternate; border-radius:2px;"></div>
+        <!-- Image section with max-width for visibility -->
+        <div style="width:100%; display:flex; justify-content:center; align-items:center; margin: 18px 0;">
+            <div style="position:relative; width:100%; max-width:900px;">
+                <img src="/static/img/gallery/i-nostri-prodotti2.png" alt="I Nostri Prodotti" style="width:100%; height:auto; border-radius:12px; box-shadow:0 4px 24px #43b36a22;">
+                <!-- Animated falling icons -->
+                <div class="rain-icons">
+                    <img src="/static/img/gallery/hearing-aids.png" class="rain-drop" style="left:12%; animation-delay:0.1s;">
+                    
+                    <img src="/static/img/gallery/hearing-aid%20(1).png" class="rain-drop" style="left:56%; animation-delay:0.3s;">
+                    <img src="/static/img/gallery/hearing-aid.png" class="rain-drop" style="left:78%; animation-delay:0.7s;">
+                    <img src="/static/img/gallery/hearing-aids.png" class="rain-drop" style="left:12%; animation-delay:0.1s;">
+                    
+                    <img src="/static/img/gallery/hearing-aid%20(1).png" class="rain-drop" style="left:56%; animation-delay:0.3s;">
+                    <img src="/static/img/gallery/hearing-aid.png" class="rain-drop" style="left:78%; animation-delay:0.7s;">
+                </div>
+            </div>
+            <style>
+            .rain-icons {
+                position: absolute;
+                top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;
+            }
+            .rain-drop {
+                position: absolute;
+                top: -60px;
+                width: 48px;
+                height: 48px;
+                opacity: 0.92;
+                animation: rainDropAnim 2.8s infinite cubic-bezier(.77,0,.18,1);
+                z-index: 2;
+            }
+            @keyframes rainDropAnim {
+                0% { top: -60px; opacity: 0; transform: scale(0.7) rotate(-12deg); }
+                20% { opacity: 1; }
+                60% { top: 70%; opacity: 1; transform: scale(1.1) rotate(8deg); }
+                80% { opacity: 0.8; }
+                100% { top: 100%; opacity: 0; transform: scale(0.7) rotate(-12deg); }
+            }
+            </style>
+        </div>
+        <div class="animated-separator" style="width:100%; height:4px; background:linear-gradient(90deg, transparent, #43b36a 60%, transparent); margin:24px 0; animation: separatorPulse 2s infinite alternate; border-radius:2px;"></div>
+        <style>
+        @keyframes separatorPulse {
+            0% { opacity: 0.7; box-shadow: 0 0 0px #43b36a; }
+            50% { opacity: 1; box-shadow: 0 0 12px #43b36a; }
+            100% { opacity: 0.7; box-shadow: 0 0 0px #43b36a; }
+        }
+        </style>
+    <!-- Booking Section: EXACT COPY from Products Page -->
+    <style>
+    .booking-box {
+    background: #f7fcf9;
+    border: 2.5px solid #bdbdbd;
+    border-radius: 12px;
+    box-shadow:
+      0 2px 12px rgba(31,164,99,0.08),
+      0 0.5px 2px rgba(31,164,99,0.04),
+      0 0 0 8px #e8f6ee inset;
+    width: 220px;
+    min-width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 16px 16px 16px;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s, border-color 0.3s, background 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.booking-box::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 0%;
+    background: linear-gradient(90deg, #1fa463 0%, #43b36a 100%);
+    opacity: 0.13;
+    z-index: 1;
+    transition: width 0.7s cubic-bezier(.77,0,.18,1);
+}
+.booking-box:hover::before {
+    width: 100%;
+    opacity: 0.18;
+}
+.booking-box:hover {
+    box-shadow: 0 8px 32px rgba(31,164,99,0.18), 0 2px 8px rgba(31,164,99,0.10), 0 0 0 8px #b6e7c7 inset;
+    border-color: #1fa463;
+    background: linear-gradient(90deg, #e8f6ee 0%, #b6e7c7 100%);
+}
+.booking-box h3 {
+    font-size: 1.22rem;
+    font-weight: 800;
+    color: #17633a;
+    margin-bottom: 8px;
+    margin-top: 0;
+    letter-spacing: 0.7px;
+    font-family: 'Montserrat', 'Segoe UI', Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 0 #e8f6ee;
+}
+.booking-box p {
+    font-size: 1.05rem;
+    color: #2d3a2e;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Lato', 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: 1.45;
+    font-weight: 500;
+}
+.booking-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 14px;
+    margin-top: 2px;
+    filter: drop-shadow(0 2px 8px rgba(31,164,99,0.13));
+    transition: transform 0.4s cubic-bezier(.77,0,.18,1);
+}
+.booking-box:hover .booking-icon {
+    transform: scale(1.13) rotate(-7deg);
+}
+.booking-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #e8f6ee 60%, #fff 100%);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(31,164,99,0.07);
+    padding: 32px 0 24px 0;
+}
+    </style>
+    <div class="booking-row">
+    <!-- Booking Section: Copied from Products Page -->
+    <style>
+        .hero-animated-text {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #fff;
+            text-align: left;
+            width: 100%;
+            animation: slideInRight 2.5s cubic-bezier(0.77,0,0.175,1) both;
+            gap: 0.7em;
+        }
+        .hero-animated-main {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            display: block;
+            line-height: 1.1;
+        }
+        .agenda-animated-icon {
+            width: 38px;
+            height: 38px;
+            animation: bounceIcon 1.2s infinite;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        @keyframes bounceIcon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-18px); }
+        }
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes rotateIcon {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+        <!-- Hero Section End -->
+        <!-- Hero Section Start -->
+        <!-- Hero Section End -->
+<!--? Preloader Start -->
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="/static/img/logo/loader.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Preloader Start -->
+<header>
+    <!--? Header Start -->
+    <div class="header-area">
+        <div class="main-header header-sticky">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-10">
+                        <div class="menu-main d-flex align-items-center justify-content-end">
+                            <!-- Main-menu -->
+                            
+                        </div>
+                    </div>   
+                    <!-- Mobile Menu -->
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+</header>
+ <!-- Booking Boxes Section (Header) -->
+        <div class="booking-header">
+            <div class="booking-row">
+                <a href="https://www.otofarmaspa.com/appuntamento/" class="booking-box" target="_blank">
+                    <img src="/static/img/gallery/agenda.png" alt="Appuntamento" class="booking-icon">
+                    <h3>Prenota Appuntamento</h3>
+                    <p>Fissa un appuntamento con i nostri specialisti.</p>
+                </a>
+                <a href="https://www.otofarmaspa.com/audio-test/" class="booking-box" target="_blank">
+                    <img src="/static/img/gallery/hearing-test (1).png" alt="Test dell'udito" class="booking-icon">
+                    <h3>Test dell'Udito</h3>
+                    <p>Effettua un test dell'udito professionale.</p>
+                </a>
+                <a href="https://maps.app.goo.gl/U7sZ9cJxnUZCM6hb6" class="booking-box" target="_blank">
+                    <img src="/static/img/gallery/map.png" alt="Visita la sede" class="booking-icon">
+                    <h3>Visita la Sede</h3>
+                    <p>Vieni a trovarci presso Otofama Spa.</p>
+                </a>
+                <a href="https://voice-aibot.onrender.com/ok" class="booking-box" target="_blank">
+                    <img src="/static/img/gallery/humanoid.png" alt="AI Facility" class="booking-icon">
+                    <h3>Ottieni Assistenza AI</h3>
+                    <p>Scopri il nostro servizio AI per l'assistenza.</p>
+                </a>
+            </div>
+        </div>
+
+<!-- JS here -->
+
+<script src="/static/js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- Jquery Mobile Menu -->
+<script src="/static/js/jquery.slicknav.min.js"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/slick.min.js"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="/static/js/wow.min.js"></script>
+<script src="/static/js/animated.headline.js"></script>
+
+<!-- Nice-select, sticky -->
+<script src="/static/js/jquery.nice-select.min.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+<script src="/static/js/jquery.magnific-popup.js"></script>
+
+<!-- contact js -->
+<script src="/static/js/contact.js"></script>
+<script src="/static/js/jquery.form.js"></script>
+<script src="/static/js/jquery.validate.min.js"></script>
+<script src="/static/js/mail-script.js"></script>
+<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="/static/js/plugins.js"></script>
+<script src="/static/js/main.js"></script>
+
+</body>
+<script>
+// Auto-highlight current page in navbar and apply hover color for active link
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('.nav-link');
+    var currentPage = location.pathname.split('/').pop();
+    navLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+</script>
+<!-- Animated Green Separator Before Footer -->
+<div class="footer-green-separator"></div>
+<style>
+    .footer-green-separator {
+        width: 100%;
+        height: 7px;
+        margin: 0 0 0 0;
+        background: linear-gradient(90deg, #43b36a 0%, #b6e7c7 100%);
+        border-radius: 3px;
+        box-shadow: 0 2px 8px rgba(31,164,99,0.10);
+        position: relative;
+        overflow: hidden;
+    }
+    .footer-green-separator::after {
+        content: "";
+        position: absolute;
+        left: -40%;
+        top: 0; bottom: 0;
+        width: 40%;
+        background: linear-gradient(90deg, #1fa463 0%, #b6e7c7 100%);
+        opacity: 0.5;
+        animation: separator-move 2.8s linear infinite;
+    }
+    @keyframes separator-move {
+        0% { left: -40%; }
+        100% { left: 100%; }
+    }
+</style>
+<footer>
+    <div class="footer-wrappr section-bg3" data-background="/static/img/gallery/footer-bg.png" style="background: #e8f6ee;">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row justify-content-between" style="position: relative;">
+                    <!-- Section 1: Job Application Form -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-section-animate" style="position: relative; animation: fadeInLeft 1s ease-out;">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle mb-30">
+                                <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">Lavora con Noi</h4>
+                                <p style="color: #666; font-size: 1rem; margin-bottom: 25px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Unisciti al nostro team di professionisti nell'innovazione audiologica</p>
+                            </div>
+                            <!-- Job Application Form -->
+                            <div class="job-application-form form-animate">
+                                <form action="mailto:info@otofarma.it" method="post" enctype="text/plain" class="job-form">
+                                    <div class="form-group mb-18">
+                                        <input type="text" name="nome" placeholder="Nome Completo *" required style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                    </div>
+                                    <div class="form-group mb-18">
+                                        <input type="email" name="email" placeholder="Email *" required style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                    </div>
+                                    <div class="form-group mb-18">
+                                        <input type="tel" name="telefono" placeholder="Telefono" style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                    </div>
+                                    <div class="form-group mb-25">
+                                        <textarea name="messaggio" rows="4" placeholder="Presentati e descrivi la tua esperienza..." style="width: 100%; padding: 14px 18px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 0.95rem; resize: vertical; transition: all 0.4s ease; background: rgba(255,255,255,0.9); font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.5;"></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn-animate" style="background: linear-gradient(135deg, #2E7D32, #388E3C); color: white; border: none; padding: 15px 30px; border-radius: 30px; font-weight: 700; font-size: 1rem; cursor: pointer; transition: all 0.4s ease; text-transform: uppercase; letter-spacing: 0.8px; width: 100%; font-family: 'Poppins', sans-serif; box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3);">
+                                        Invia Candidatura
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Vertical Separator Line -->
+                        <div class="vertical-separator separator-animate" style="position: absolute; right: -1px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, transparent, #2E7D32, transparent); opacity: 0.7; animation: pulse 2s infinite;"></div>
+                    </div>
+                    <!-- Section 2: Google Maps Location -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-section-animate" style="position: relative; animation: fadeInUp 1s ease-out 0.2s both;">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle mb-30">
+                                <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">La Nostra Sede</h4>
+                                <p style="color: #666; font-size: 1rem; margin-bottom: 25px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Visita i nostri uffici e scopri l'innovazione audiologica</p>
+                            </div>
+                            <!-- Google Maps Embed -->
+                            <div class="map-container map-animate" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2); border: 3px solid rgba(46, 125, 50, 0.15); transition: all 0.4s ease;">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4446!2d16.8769456!3d41.1171526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e8b7c5a8a573%3A0x5f5b5f5b5f5b5f5b!2sOtofarma%20SpA!5e0!3m2!1sit!2sit!4v1703851200000!5m2!1sit!2sit"
+                                    width="100%" 
+                                    height="280" 
+                                    style="border:0; border-radius: 12px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                                <a href="https://maps.app.goo.gl/kimAKtS8GJ6HRpx17" target="_blank" style="position: absolute; top: 12px; right: 12px; background: rgba(46, 125, 50, 0.95); color: white; padding: 10px 16px; border-radius: 25px; font-size: 0.85rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);">
+                                    Apri in Maps
+                                </a>
+                            </div>
+                            <div style="margin-top: 18px; text-align: center;">
+                                <p style="color: #555; font-size: 0.9rem; line-height: 1.5; margin: 0; font-family: 'Open Sans', sans-serif; font-weight: 500;">
+                                    <strong style="color: #2E7D32; font-weight: 700; font-size: 1rem;">Otofarma SpA</strong><br>
+                                    <span style="color: #666; font-weight: 600;">Centro di Eccellenza Audiologica</span><br>
+                                    <span style="color: #888; font-size: 0.85rem; font-style: italic;">Clicca sulla mappa per indicazioni dettagliate</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Vertical Separator Line -->
+                        <div class="vertical-separator separator-animate" style="position: absolute; right: -1px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, transparent, #2E7D32, transparent); opacity: 0.7; animation: pulse 2s infinite 0.5s;"></div>
+                    </div>
+                    <!-- Section 3: Social Media Links -->
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-section-animate" style="animation: fadeInRight 1s ease-out 0.4s both;">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle mb-30">
+                                <h4 style="color: #2E7D32; font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">Seguici</h4>
+                                <p style="color: #666; font-size: 1rem; margin-bottom: 30px; line-height: 1.6; font-family: 'Open Sans', sans-serif; font-weight: 400;">Rimani connesso con le nostre innovazioni e aggiornamenti</p>
+                            </div>
+                            <!-- Social Media Icons Grid -->
+                            <div class="social-media-grid social-grid-animate" style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 30px; justify-items: center;">
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/otofarma_s.p.a?utm_source=ig_web_button_share_sheet&igsh=MWthM3Q0MndpaXB5Nw==" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                    <img src="/static/img/gallery/instagram.png" alt="Instagram" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                </a>
+                                
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/share/1PW4kE1vwW/?mibextid=wwXIfr" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                    <img src="/static/img/gallery/facebook.png" alt="Facebook" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                </a>
+                                
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/company/otofarma-spa/" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                    <img src="/static/img/gallery/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                </a>
+                                
+                                <!-- Email -->
+                                <a href="mailto:info@otofarma.it" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                    <img src="/static/img/gallery/communication.png" alt="Email" style="width: 50px; height: 50px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                </a>
+                            </div>
+                            
+                            <!-- Contact Info -->
+                            <div class="contact-info-animate" style="background: rgba(46, 125, 50, 0.06); padding: 22px; border-radius: 12px; border-left: 5px solid #2E7D32; backdrop-filter: blur(5px); box-shadow: 0 6px 20px rgba(46, 125, 50, 0.1);">
+                                <h5 style="color: #2E7D32; font-weight: 800; font-size: 1.1rem; margin-bottom: 12px; font-family: 'Poppins', sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">Contatti Diretti</h5>
+<p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+    <strong style="color: #2E7D32; font-weight: 700;">Telefono:</strong> <a href="tel:08118543072" style="color: #555; text-decoration: none;">081 1854 3072</a>
+</p>
+                                <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                    <strong style="color: #2E7D32; font-weight: 700;">Email:</strong> <a href="mailto:info@otofarma.it" style="color: #555; text-decoration: none;">info@otofarma.it</a>
+                                </p>
+                                <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                    <strong style="color: #2E7D32; font-weight: 700;">PEC:</strong> <a href="mailto:otofarmaspa@pec.it" style="color: #555; text-decoration: none;">otofarmaspa@pec.it</a>
+                                </p>
+                                <p style="color: #555; font-size: 0.9rem; margin: 8px 0; font-family: 'Open Sans', sans-serif; font-weight: 500; line-height: 1.4;">
+                                    <strong style="color: #2E7D32; font-weight: 700;">P.IVA:</strong> 08431301210
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Company Logo Section -->
+                <div class="row justify-content-center" style="margin-top: 40px; padding-top: 30px; border-top: 2px solid rgba(46, 125, 50, 0.1);">
+                    <div class="col-xl-12 text-center">
+                        <div class="footer-logo mb-25">
+                            <a href="/"><img src="/static/img/logo/logo2_footer.png" alt="Otofarma SpA" style="max-height: 60px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom - Copyright -->
+        <div class="footer-bottom-area" style="background: rgba(46, 125, 50, 0.05); padding: 20px 0; border-top: 1px solid rgba(46, 125, 50, 0.1);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer-copy-right text-center">
+                            <p style="color: #666; font-size: 0.9rem; margin: 0; font-weight: 500;">
+                                Copyright © 2025 | <strong style="color: #2E7D32;">Otofarma SpA</strong> | P.IVA 08431301210 | 
+                                <a href="mailto:otofarmaspa@pec.it" style="color: #2E7D32; text-decoration: none;">otofarmaspa@pec.it</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+// Auto-highlight current page in navbar
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('#navigation .nav-link');
+    var currentPage = window.location.pathname.split('/').pop();
+    navLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href === currentPage || (href === 'contact.html' && currentPage === 'contact.html')) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+</script>
+</footer>
+</html>

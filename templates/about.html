@@ -1,0 +1,1007 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Chi Siamo | Otofarma SpA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Manifest removed: file missing. Add site.webmanifest to static/ if needed. -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/slicknav.css">
+    <link rel="stylesheet" href="/static/css/flaticon.css">
+    <link rel="stylesheet" href="/static/css/gijgo.css">
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/animated-headline.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel="stylesheet" href="/static/css/slick.css">
+    <link rel="stylesheet" href="/static/css/nice-select.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Removed duplicate nav-link.active CSS for cleaner code -->
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="/static/img/logo/loader.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    
+    <!-- Stock Notification Popup - Fixed Position -->
+    <div id="stock-notification" class="stock-notification-popup" style="position: fixed; top: 80px; right: 20px; width: 140px; background: linear-gradient(135deg, #ffffff, #f8fffe); border: 1px solid #2E7D32; border-radius: 8px; padding: 8px; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2); z-index: 9999; transform: translateX(100%); opacity: 0; transition: all 0.5s ease;">
+        <!-- Close Button -->
+        <button id="close-stock-notification" style="position: absolute; top: 2px; right: 2px; background: none; border: none; color: #666; font-size: 12px; cursor: pointer; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s ease;">
+            ×
+        </button>
+        
+        <!-- Compact Header -->
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+            <div style="width: 20px; height: 20px; background: linear-gradient(135deg, #2E7D32, #388E3C); border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-right: 6px;">
+                <i style="color: white; font-size: 10px;" class="fas fa-pills"></i>
+            </div>
+            <span style="font-weight: 600; font-size: 10px; color: #2E7D32; text-transform: uppercase; letter-spacing: 0.5px;">Disponibile</span>
+        </div>
+        
+        <!-- Content -->
+        <div style="text-align: center; margin-bottom: 8px;">
+            <div style="font-size: 9px; color: #666; margin-bottom: 2px; font-weight: 500;">Nuovo Arrivo</div>
+            <div style="font-size: 10px; font-weight: 700; color: #2E7D32; line-height: 1.2; margin-bottom: 4px;">OTOFARMA Premium</div>
+            <div style="font-size: 8px; color: #888; line-height: 1.3;">✓ Certificato CE<br>✓ Spedizione Gratuita</div>
+        </div>
+        
+        <!-- CTA Button -->
+        <button onclick="window.open('https://otofarma.com', '_blank')" style="width: 100%; background: linear-gradient(135deg, #2E7D32, #4CAF50); color: white; border: none; padding: 6px 8px; border-radius: 4px; font-size: 9px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.3px;">
+            Scopri Ora
+        </button>
+    </div>
+
+    <header>
+        <!--? Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid" style="background: #e8f6ee;">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="/" ><img src="/static/img/logo/logo.png" alt="" style="max-width: 80%; height: auto;"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav> 
+                                        <ul id="navigation" class="professional-nav">
+                                            <li><a href="/" class="nav-link">Home</a></li>
+                                            <li><a href="/about" class="nav-link active">Chi Siamo</a></li>
+                                            <li><a href="/services" class="nav-link">Prodotti</a></li>
+                                            <li><a href="/blog" class="nav-link">News</a></li>
+                                            <li><a href="/contact" class="nav-link">Contatti</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-15">
+                                    <a href="https://voice-aibot.onrender.com/" class="btn header-btn" target="_blank">
+                                        Parla con Assistente AI
+                                        <img src="/static/img/gallery/ai-technology.png" alt="AI" style="width: 22px; height: 22px; margin-left: 8px; vertical-align: middle;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!-- About Hero Section -->
+    <section class="about-hero-section" style="background-image: url('/static/img/gallery/aboutbg.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 70vh; display: flex; align-items: center; position: relative;">
+            <!-- Optional overlay for better text readability -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.3);"></div>
+            
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="row align-items-center">
+                    <!-- Left Side - Text Content -->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="hero-content" style="padding-right: 40px;">
+                            <!-- Welcome Text -->
+                            <h1 class="welcome-green" style="
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: 900;
+                                font-size: 4rem;
+                                color: #43b36a;
+                                margin-bottom: 6px;
+                                letter-spacing: 2px;
+                                text-shadow: 0 10px 40px rgba(67,179,106,0.22), 0 2px 8px rgba(0,0,0,0.18);
+                                filter: drop-shadow(0 2px 18px rgba(67,179,106,0.22));
+                                opacity: 0;
+                                transform: translateX(-160px);
+                                animation: welcomeSlideLeft 5s cubic-bezier(.77,0,.18,1) 0.1s forwards;
+                            ">
+                                Benvenuto in Otofarma Spa
+                            </h1>
+                            <h1 class="animated-headline-main" style="
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: bold;
+                                font-size: 2.7rem;
+                                letter-spacing: 1.5px;
+                                color: #fff;
+                                background: none;
+                                text-shadow: 0 6px 32px rgba(76,175,80,0.18), 0 2px 8px rgba(0,0,0,0.25);
+                                filter: drop-shadow(0 2px 12px rgba(76,175,80,0.12));
+                                opacity: 0;
+                                margin-bottom: 4px;
+                                transform: translateX(160px);
+                                animation: headlineSlideRight 5s cubic-bezier(.77,0,.18,1) 2.2s forwards;
+                                white-space: pre-line;
+                            ">
+                                Ascoltiamo il futuro, costruiamo oggi
+                            </h1>
+                            <h2 class="animated-headline-sub" style="
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: bold;
+                                font-size: 2.1rem;
+                                color: #2E7D32;
+                                background: none;
+                                text-shadow: 0 4px 18px rgba(46,125,50,0.12);
+                                filter: drop-shadow(0 2px 8px rgba(46,125,50,0.12));
+                                font-style: italic;
+                                letter-spacing: 1px;
+                                opacity: 0;
+                                margin-bottom: 0;
+                                transform: translateY(100px);
+                                animation: subFadeUp 5s 3.8s cubic-bezier(.77,0,.18,1) forwards;
+                                white-space: pre-line;
+                            ">
+                                Trasparenza. Comfort. Fiducia
+                            </h2>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side - LED TV with Video -->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div id="ledTvContainer" class="led-tv-container" style="position: relative; perspective: 1000px; margin: 20px;">
+                            <!-- TV Frame -->
+                            <div class="tv-frame" style="
+                                background: linear-gradient(145deg, #1a1a1a, #2d2d2d, #1a1a1a);
+                                border-radius: 20px;
+                                padding: 25px;
+                                box-shadow: 
+                                    0 0 30px rgba(0,0,0,0.8),
+                                    inset 0 2px 5px rgba(255,255,255,0.1),
+                                    inset 0 -2px 5px rgba(0,0,0,0.3),
+                                    0 20px 60px rgba(0,0,0,0.6);
+                                position: relative;
+                                transform-style: preserve-3d;
+                                animation: tvGlow 4s ease-in-out infinite;
+                            ">
+                                <!-- LED Indicator Light -->
+                                <div style="
+                                    position: absolute;
+                                    bottom: 8px;
+                                    right: 30px;
+                                    width: 8px;
+                                    height: 8px;
+                                    background: #00ff00;
+                                    border-radius: 50%;
+                                    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+                                    animation: ledPulse 2s ease-in-out infinite;
+                                "></div>
+                                
+                                <!-- TV Brand Badge -->
+                                <div style="
+                                    position: absolute;
+                                    bottom: 8px;
+                                    left: 30px;
+                                    color: #666;
+                                    font-size: 10px;
+                                    font-weight: bold;
+                                    font-family: Arial, sans-serif;
+                                    letter-spacing: 1px;
+                                    animation: brandPulse 3s ease-in-out infinite;
+                                ">OTOFARMA</div>
+                                
+                                <!-- Screen Bezel -->
+                                <div class="screen-bezel" style="
+                                    background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+                                    border-radius: 15px;
+                                    padding: 8px;
+                                    position: relative;
+                                    overflow: hidden;
+                                ">
+                                    <!-- Screen Reflection -->
+                                    <div style="
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background: linear-gradient(
+                                            135deg, 
+                                            rgba(255,255,255,0.1) 0%, 
+                                            transparent 30%, 
+                                            transparent 70%, 
+                                            rgba(255,255,255,0.05) 100%
+                                        );
+                                        border-radius: 12px;
+                                        pointer-events: none;
+                                        z-index: 3;
+                                        animation: screenReflection 6s linear infinite;
+                                    "></div>
+                                    
+                                    <!-- Video Container -->
+                                    <div class="video-screen" style="
+                                        position: relative;
+                                        border-radius: 12px;
+                                        overflow: hidden;
+                                        background: #000;
+                                        box-shadow: 
+                                            inset 0 0 20px rgba(0,0,0,0.8),
+                                            0 0 30px rgba(46, 125, 50, 0.3);
+                                    ">
+                                        <video 
+                                            autoplay 
+                                            muted 
+                                            loop 
+                                            playsinline
+                                            style="
+                                                width: 100%; 
+                                                height: auto; 
+                                                display: block; 
+                                                border-radius: 8px;
+                                                filter: contrast(1.1) brightness(1.05) saturate(1.1);
+                                            "
+                                            oncontextmenu="return false;"
+                                            controlslist="nodownload nofullscreen noremoteplayback"
+                                            disablepictureinpicture>
+                                            <source src="https://www.otofarmaspa.com/wp-content/uploads/2025/01/8.-Video-Uneccellenza-chiamata-Otofarma-.mp4" type="video/mp4">
+                                            Il tuo browser non supporta il tag video.
+                                        </video>
+                                        
+                                        <!-- Screen Glow Effect -->
+                                        <div style="
+                                            position: absolute;
+                                            top: -5px;
+                                            left: -5px;
+                                            right: -5px;
+                                            bottom: -5px;
+                                            background: linear-gradient(45deg, 
+                                                rgba(46, 125, 50, 0.1), 
+                                                rgba(76, 175, 80, 0.1), 
+                                                rgba(46, 125, 50, 0.1)
+                                            );
+                                            border-radius: 15px;
+                                            z-index: -1;
+                                            animation: screenGlow 3s ease-in-out infinite;
+                                        "></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- TV Stand -->
+                                <div style="
+                                    position: absolute;
+                                    bottom: -15px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 60px;
+                                    height: 12px;
+                                    background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+                                    border-radius: 0 0 8px 8px;
+                                    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+                                "></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Thin Full-Width Green Separator Line -->
+        <div class="full-green-divider-wrap">
+            <div class="full-green-divider"></div>
+        </div>
+                        <!-- Animated Green Divider for Team Section -->
+<!-- Info Sectors Section (horizontal layout, below header) -->
+<section class="info-sectors-section" style="background: #fff; position: relative; padding: 64px 0 48px 0;">
+            <div class="container" style="max-width: 1200px; position: relative; z-index: 2;">
+                <div class="animated-particles-bg" style="position: absolute; inset: 0; z-index: 0; pointer-events: none;">
+        <div class="counters-bg-animation">
+    <div class="floating-shape shape-31" style="background: rgba(67,179,106,0.35); box-shadow: 0 0 18px 6px rgba(67,179,106,0.18);"></div>
+    <div class="floating-shape shape-32" style="background: rgba(255,64,129,0.32); box-shadow: 0 0 18px 6px rgba(255,64,129,0.15);"></div>
+    <div class="floating-shape shape-33" style="background: rgba(0,184,212,0.28); box-shadow: 0 0 18px 6px rgba(0,184,212,0.12);"></div>
+    <div class="floating-shape shape-34" style="background: rgba(255,214,0,0.26); box-shadow: 0 0 18px 6px rgba(255,214,0,0.10);"></div>
+    <div class="floating-shape shape-35" style="background: rgba(142,36,170,0.30); box-shadow: 0 0 18px 6px rgba(142,36,170,0.13);"></div>
+            <div class="floating-shape shape-1" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-2" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-3" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-4" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-5" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-6" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-7" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-8" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-9" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-10" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-11" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-12" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-13" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-14" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-15" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-16" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-17" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-18" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-19" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-20" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-21" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-22" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-23" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-24" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-25" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-26" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-27" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-28" style="background: #FF4081;"></div>
+            <div class="floating-shape shape-29" style="background: #43b36a;"></div>
+            <div class="floating-shape shape-30" style="background: #FF4081;"></div>
+        </div>
+                </div>
+                <div class="row info-sectors-row" style="display: flex; flex-wrap: nowrap; gap: 40px; justify-content: center; align-items: stretch; position: relative; z-index: 2;">
+                    <!-- Sector 1 -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 info-sector" style="background: #fff; border-radius: 22px; box-shadow: 0 8px 36px rgba(76,175,80,0.13); padding: 48px 28px; min-width: 0; flex: 1 1 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
+                        <img src="/static/img/gallery/guarantee.png" alt="Garanzia" style="width: 64px; height: 64px; margin-bottom: 18px;">
+                        <h3 style="color: #2E7D32; font-size: 2.1rem; font-weight: 900; margin-bottom: 18px; font-family: 'Montserrat', Arial, Helvetica, sans-serif; letter-spacing: 2px;">Garanzia Servizio</h3>
+                        <p style="font-size: 1.18rem; color: #222; font-family: 'Montserrat', Arial, Helvetica, sans-serif; line-height: 1.8; margin-bottom: 0;">
+                            OTOFARMA S.p.A., leader italiano in audiologia, ha rivoluzionato l'accesso alle protesi uditive dal <span style="color:#43b36a; font-weight:bold;">2000</span>. Con <span style="color:#43b36a; font-weight:bold;">6 brevetti</span>, certificazione <span style="color:#43b36a; font-weight:bold;">ISO</span> e il lancio del sistema <span style="color:#43b36a; font-weight:bold;">3S</span> (<span style="color:#43b36a; font-weight:bold;">2023</span>, <span style="color:#43b36a; font-weight:bold;">€250 + 4% IVA</span>), siamo pionieri della teleaudiologia in Europa, servendo oltre <span style="color:#43b36a; font-weight:bold;">3.000 farmacie</span>. Aiutiamo <span style="color:#43b36a; font-weight:bold;">360 milioni</span> di persone con ipoacusia, unendo innovazione ed empatia. Crescita esponenziale e solide azioni riflettono il nostro impatto.
+                        </p>
+                    </div>
+                    <!-- Sector 2 -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 info-sector" style="background: #fff; border-radius: 22px; box-shadow: 0 8px 36px rgba(76,175,80,0.13); padding: 48px 28px; min-width: 0; flex: 1 1 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
+                        <img src="/static/img/gallery/customer-service.png" alt="Servizio" style="width: 64px; height: 64px; margin-bottom: 18px;">
+                        <h3 style="color: #2E7D32; font-size: 2.1rem; font-weight: 900; margin-bottom: 18px; font-family: 'Montserrat', Arial, Helvetica, sans-serif; letter-spacing: 2px;">Prodotti e Servizi</h3>
+                        <p style="font-size: 1.18rem; color: #222; font-family: 'Montserrat', Arial, Helvetica, sans-serif; line-height: 1.8; margin-bottom: 0;">
+                            Offriamo protesi endoauricolari e retroauricolari (<span style="color:#43b36a; font-weight:bold;">€850 + 4% IVA</span>) con materiali biocompatibili e il sistema <span style="color:#43b36a; font-weight:bold;">3S</span>, che riduce il <span style="color:#43b36a; font-weight:bold;">30%</span> degli acufeni. La teleaudiologia <span style="color:#43b36a; font-weight:bold;">gratuita</span>, visite domiciliari e app di monitoraggio completano un'offerta sostenibile (<span style="color:#43b36a; font-weight:bold;">95% riciclabile</span>), rendendo l'udito un diritto accessibile.
+                        </p>
+                    </div>
+                    <!-- Sector 3 -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 info-sector" style="background: #fff; border-radius: 22px; box-shadow: 0 8px 36px rgba(76,175,80,0.13); padding: 48px 28px; min-width: 0; flex: 1 1 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
+                        <img src="/static/img/gallery/success.png" alt="Successo" style="width: 64px; height: 64px; margin-bottom: 18px;">
+                        <h3 style="color: #2E7D32; font-size: 2.1rem; font-weight: 900; margin-bottom: 18px; font-family: 'Montserrat', Arial, Helvetica, sans-serif; letter-spacing: 2px;">Mercato e Certificazioni</h3>
+                        <p style="font-size: 1.18rem; color: #222; font-family: 'Montserrat', Arial, Helvetica, sans-serif; line-height: 1.8; margin-bottom: 0;">
+                            Presente in Italia con oltre <span style="color:#43b36a; font-weight:bold;">4.000 farmacie</span> e in Europa, OTOFARMA vanta un <span style="color:#43b36a; font-weight:bold;">ROI del 25% annuo</span> e certificazioni <span style="color:#43b36a; font-weight:bold;">ISO</span>. Operiamo con un flusso digitale: esami <span style="color:#43b36a; font-weight:bold;">gratuiti</span>, modellazione <span style="color:#43b36a; font-weight:bold;">3D</span>, AI per manutenzione (<span style="color:#43b36a; font-weight:bold;">-40% tempi</span>). Zero richiami in <span style="color:#43b36a; font-weight:bold;">5 anni</span>, <span style="color:#43b36a; font-weight:bold;">NPS del 92%</span>, e conformità <span style="color:#43b36a; font-weight:bold;">GDPR</span> garantiscono eccellenza globale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+</section>
+                </section>
+        
+                <!-- Animated Green Divider -->
+                <div class="full-green-divider-wrap">
+                    <div class="full-green-divider"></div>
+                </div>
+                <!-- Info Sectors Section -->
+                <section class="info-sectors-section" style="background: #fff; position: relative; padding: 64px 0 48px 0;">
+          <!-- Professional Floating Elements Background -->
+          <div class="counters-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+            <div class="floating-shape shape-7"></div>
+            <div class="floating-shape shape-8"></div>
+            <div class="floating-shape shape-9"></div>
+            <div class="floating-shape shape-10"></div>
+            <div class="floating-shape shape-11"></div>
+            <div class="floating-shape shape-12"></div>
+            <div class="floating-shape shape-13"></div>
+            <div class="floating-shape shape-14"></div>
+            <div class="floating-shape shape-15"></div>
+            <div class="floating-shape shape-16"></div>
+            <div class="floating-shape shape-17"></div>
+            <div class="floating-shape shape-18"></div>
+            <div class="floating-shape shape-19"></div>
+            <div class="floating-shape shape-20"></div>
+            <div class="floating-shape shape-21"></div>
+            <div class="floating-shape shape-22"></div>
+            <div class="floating-shape shape-23"></div>
+            <div class="floating-shape shape-24"></div>
+            <div class="floating-shape shape-25"></div>
+          </div>
+          <div class="container" style="max-width: 1200px; position: relative; z-index: 2;">
+                        <div style="text-align: center; margin-bottom: 28px;">
+                                            <h2 class="section-title-animated" style="font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-weight: 900; font-size: 2.8rem; color: #145a23; letter-spacing: 2px; margin-bottom: 0;">
+                                                <!-- Team Section (moved to 3rd position) -->
+                                                <section class="team-section" style="background: none; position: relative; padding: 64px 0 48px 0;">
+                                                    <div class="container" style="max-width: 1200px; position: relative; z-index: 2; background: #fff;">
+                                                        <div style="text-align: center; margin-bottom: 28px;">
+                                                            <h2 class="section-title-animated" style="font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-weight: 900; font-size: 2.8rem; color: #145a23; letter-spacing: 2px; margin-bottom: 0;">
+                                                                Il Nostro Team
+                                                            </h2>
+                                                            <div class="animated-mixed-line" style="height: 6px; width: 100%; max-width: 480px; margin: 16px auto 0 auto; border-radius: 3px;"></div>
+                                                        </div>
+                                                        <div class="team-slider-wrap" style="position: relative;">
+                                                            <div class="team-multi-slideshow-row" style="display: flex; justify-content: center; align-items: center; gap: 32px; width: 100%; max-width: 1200px; margin: 0 auto;">
+                                                                <div class="team-slideshow-box" style="flex: 1 1 0; max-width: 340px; min-width: 0; text-align: center;">
+                                                                    <img id="team-slideshow-img-1" src="/static/img/gallery/11.jpg" alt="Team 1" class="team-img" style="width: 100%; max-width: 320px; height: 320px; object-fit: cover; border-radius: 18px; box-shadow: 0 8px 32px rgba(67,179,106,0.13); transition: opacity 0.7s;" />
+                                                                </div>
+                                                                <div class="team-slideshow-box" style="flex: 1 1 0; max-width: 340px; min-width: 0; text-align: center;">
+                                                                    <img id="team-slideshow-img-2" src="/static/img/gallery/22.jpg" alt="Team 2" class="team-img" style="width: 100%; max-width: 320px; height: 320px; object-fit: cover; border-radius: 18px; box-shadow: 0 8px 32px rgba(67,179,106,0.13); transition: opacity 0.7s;" />
+                                                                </div>
+                                                                <div class="team-slideshow-box" style="flex: 1 1 0; max-width: 340px; min-width: 0; text-align: center;">
+                                                                    <img id="team-slideshow-img-3" src="/static/img/gallery/33.jpg" alt="Team 3" class="team-img" style="width: 100%; max-width: 320px; height: 320px; object-fit: cover; border-radius: 18px; box-shadow: 0 8px 32px rgba(67,179,106,0.13); transition: opacity 0.7s;" />
+                                                                </div>
+                                                                <div class="team-slideshow-box" style="flex: 1 1 0; max-width: 340px; min-width: 0; text-align: center;">
+                                                                    <img id="team-slideshow-img-4" src="/static/img/gallery/44.jpg" alt="Team 4" class="team-img" style="width: 100%; max-width: 320px; height: 320px; object-fit: cover; border-radius: 18px; box-shadow: 0 8px 32px rgba(67,179,106,0.13); transition: opacity 0.7s;" />
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                // Four independent slideshows, random image change, slow interval
+                                                                document.addEventListener('DOMContentLoaded', function() {
+                                                                    var images = [
+                                                                        '/static/img/gallery/11.jpg',
+                                                                        '/static/img/gallery/22.jpg',
+                                                                        '/static/img/gallery/33.jpg',
+                                                                        '/static/img/gallery/44.jpg',
+                                                                        '/static/img/gallery/55.jpg',
+                                                                        '/static/img/gallery/66.jpg',
+                                                                        '/static/img/gallery/77.jpg'
+                                                                    ];
+                                                                    function startSlideshow(imgId, initialIdx) {
+                                                                        var imgElem = document.getElementById(imgId);
+                                                                        var idx = initialIdx;
+                                                                        imgElem.src = images[idx];
+                                                                        setInterval(function() {
+                                                                            var nextIdx;
+                                                                            do {
+                                                                                nextIdx = Math.floor(Math.random() * images.length);
+                                                                            } while (nextIdx === idx);
+                                                                            idx = nextIdx;
+                                                                            imgElem.style.opacity = 0.2;
+                                                                            setTimeout(function() {
+                                                                                imgElem.src = images[idx];
+                                                                                imgElem.style.opacity = 1;
+                                                                            }, 600);
+                                                                        }, 6000 + Math.floor(Math.random()*1200));
+                                                                    }
+                                                                    startSlideshow('team-slideshow-img-1', 0);
+                                                                    startSlideshow('team-slideshow-img-2', 1);
+                                                                    startSlideshow('team-slideshow-img-3', 2);
+                                                                    startSlideshow('team-slideshow-img-4', 3);
+                                                                });
+                                                            </script>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                <!-- Thin Full-Width Green Separator Line (matches previous sections) -->
+                <div class="full-green-divider-wrap" style="width: 100vw; margin-left: calc(-50vw + 50%); padding: 0;">
+                    <div class="full-green-divider" style="height: 6px; width: 100vw; background: linear-gradient(90deg, #43b36a 0%, #2E7D32 100%); border-radius: 3px; margin: 0; display: block;"></div>
+                </div>
+                        <!-- New Section: Company Excellence & Telemedicina (no particles) -->
+                        <section class="excellence-section" style="background: #fff; position: relative; padding: 64px 0 48px 0;">
+                            <div class="container" style="max-width: 1200px; position: relative; z-index: 2;">
+                                <div class="row align-items-center" style="display: flex; flex-wrap: wrap; gap: 32px;">
+                                    <!-- Left: Text with animated title -->
+                                    <div class="col-lg-7 col-md-12" style="flex: 1 1 0; min-width: 320px;">
+                                        <h2 class="excellence-title-animated" style="font-family: 'Playfair Display', 'Montserrat', Arial, Helvetica, sans-serif; font-weight: 900; font-size: 2.3rem; color: #145a23; letter-spacing: 2px; margin-bottom: 22px; position: relative; overflow: hidden;">
+                                            <span class="slide-title-left" style="display: inline-block; position: relative; opacity: 0;">Sentirsi bene per stare meglio</span>
+                                        </h2>
+                                        <div class="excellence-text" style="font-size: 1.18rem; color: #222; font-family: 'Montserrat', Arial, Helvetica, sans-serif; line-height: 1.8; font-weight: 500; text-align: justify;">
+                                            <span style="color:#43b36a; font-weight:700;">OTOFARMA SpA</span>, azienda leader nella <span style="color:#43b36a; font-weight:700;">costruzione</span> e <span style="color:#43b36a; font-weight:700;">produzione</span> di protesi acustiche, cresce costantemente nel settore audiologico per offrire risposte adeguate a ogni esigenza di <span style="color:#43b36a; font-weight:700;">protesi acustica</span> ai nostri clienti che richiedono la migliore applicazione personalizzata possibile di <span style="color:#43b36a; font-weight:700;">protesi su misura</span>.<br><br>
+                                            Sta inoltre entrando gradualmente nel mondo della <span style="color:#43b36a; font-weight:700;">TELEMEDICINA</span>, anticipando i tempi con la <span style="color:#43b36a; font-weight:700;">TELEAUDIOLOGIA SPECIALISTICA IN FARMACIA</span>, diventando la <span style="color:#43b36a; font-weight:700;">prima in Europa</span> a consentire <span style="color:#43b36a; font-weight:700;">visite online</span> tra medici e pazienti.<br><br>
+                                            OTOFARMA SpA fornisce <span style="color:#43b36a; font-weight:700;">dispositivi medici otoacustici</span> e servizi di <span style="color:#43b36a; font-weight:700;">TELEMEDICINA</span> esclusivamente nelle farmacie convenzionate, possedendo un portafoglio significativo di <span style="color:#43b36a; font-weight:700;">6 brevetti IT strumentali</span>.
+                                        </div>
+                                    </div>
+                                    <!-- Right: Image with animation, reduced size -->
+                                    <div class="col-lg-5 col-md-12" style="flex: 1 1 0; min-width: 320px; display: flex; justify-content: center; align-items: center;">
+                                        <img class="slide-image-right" src="/static/img/gallery/20250924_1531_Corporate%20Gathering%20at%20Borsa_remix_01k5xykepke8c96zdks1c9rhta.png" alt="Otofarma Corporate" style="width: 100%; max-width: 340px; height: auto; border-radius: 18px; box-shadow: 0 8px 32px rgba(67,179,106,0.13); object-fit: cover; opacity: 0; position: relative; right: -80px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Full-Width Green Separator Line (after section) -->
+                        <div class="full-green-divider-wrap" style="width: 100vw; margin-left: calc(-50vw + 50%); padding: 0;">
+                            <div class="full-green-divider" style="height: 6px; width: 100vw; background: linear-gradient(90deg, #43b36a 0%, #2E7D32 100%); border-radius: 3px; margin: 0; display: block;"></div>
+                        </div>
+                        <style>
+                                @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+                                @keyframes slideTitleLeft {
+                                    0% { left: -80px; opacity: 0; }
+                                    80% { left: 10px; opacity: 1; }
+                                    100% { left: 0px; opacity: 1; }
+                                }
+                                @keyframes slideImageRight {
+                                    0% { right: -80px; opacity: 0; }
+                                    80% { right: 10px; opacity: 1; }
+                                    100% { right: 0px; opacity: 1; }
+                                }
+                                .slide-title-left {
+                                    animation: slideTitleLeft 2.2s cubic-bezier(.77,0,.18,1) 0.2s forwards;
+                                    left: -80px;
+                                    opacity: 0;
+                                    position: relative;
+                                    color: #145a23;
+                                    font-family: 'Playfair Display', 'Montserrat', Arial, Helvetica, sans-serif;
+                                    font-weight: 900;
+                                    font-size: 2.7rem;
+                                    letter-spacing: 2px;
+                                }
+                                .slide-image-right {
+                                    animation: slideImageRight 2.2s cubic-bezier(.77,0,.18,1) 0.4s forwards;
+                                    right: -80px;
+                                    opacity: 0;
+                                    position: relative;
+                                }
+                        </style>
+                        <script>
+                        // Animate title and image every time section enters viewport
+                        function animateExcellenceSection() {
+                            var section = document.querySelector('.excellence-section');
+                            var title = section ? section.querySelector('.slide-title-left') : null;
+                            var img = section ? section.querySelector('.slide-image-right') : null;
+                            if (!section || !title || !img) return;
+                            // Reset animations
+                            title.style.animation = 'none';
+                            img.style.animation = 'none';
+                            title.style.opacity = '0';
+                            img.style.opacity = '0';
+                            // Force reflow
+                            void title.offsetWidth;
+                            void img.offsetWidth;
+                            // Trigger animations
+                            title.style.animation = 'slideTitleLeft 2.2s cubic-bezier(.77,0,.18,1) 0.2s forwards';
+                            img.style.animation = 'slideImageRight 2.2s cubic-bezier(.77,0,.18,1) 0.4s forwards';
+                        }
+                        // Intersection Observer for scroll-based animation
+                        document.addEventListener('DOMContentLoaded', function() {
+                            var section = document.querySelector('.excellence-section');
+                            if (!section) return;
+                            var observer = new window.IntersectionObserver(function(entries) {
+                                entries.forEach(function(entry) {
+                                    if (entry.isIntersecting) {
+                                        animateExcellenceSection();
+                                    }
+                                });
+                            }, { threshold: 0.5 });
+                            observer.observe(section);
+                        });
+                        </script>
+                    </div>
+
+                    <!-- Section 2: Google Maps Location -->
+                    <div class="footer-horizontal-row" style="display: flex; flex-wrap: nowrap; background: #eafaf2; border-radius: 18px; box-shadow: 0 4px 18px rgba(67,179,106,0.08); overflow: hidden; margin-bottom: 0;">
+                        <!-- Section 1: La Nostra Sede -->
+                        <div class="footer-section-animate" style="flex: 1 1 0; min-width: 320px; padding: 32px 28px; position: relative; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle mb-30">
+                                    <h4 style="color: #2E7D32; font-weight: 900; font-size: 2.1rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">La Nostra Sede</h4>
+                                    <p style="color: #666; font-size: 1.25rem; margin-bottom: 25px; line-height: 1.7; font-family: 'Open Sans', sans-serif; font-weight: 500;">Visita i nostri uffici e scopri l'innovazione audiologica</p>
+                                </div>
+                                <!-- Google Maps Embed -->
+                                <div class="map-container map-animate" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2); border: 3px solid rgba(46, 125, 50, 0.15); transition: all 0.4s ease;">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4446!2d16.8769456!3d41.1171526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e8b7c5a8a573%3A0x5f5b5f5b5f5b5f5b!2sOtofarma%20SpA!5e0!3m2!1sit!2sit!4v1703851200000!5m2!1sit!2sit"
+                                        width="100%" 
+                                        height="280" 
+                                        style="border:0; border-radius: 12px;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                    <a href="https://maps.app.goo.gl/kimAKtS8GJ6HRpx17" target="_blank" style="position: absolute; top: 12px; right: 12px; background: rgba(46, 125, 50, 0.95); color: white; padding: 10px 16px; border-radius: 25px; font-size: 1.05rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);">
+                                        Apri in Maps
+                                    </a>
+                                </div>
+                                <div style="margin-top: 18px; text-align: center;">
+                                    <p style="color: #555; font-size: 1.1rem; line-height: 1.6; margin: 0; font-family: 'Open Sans', sans-serif; font-weight: 600;">
+                                        <strong style="color: #2E7D32; font-weight: 800; font-size: 1.2rem;">Otofarma SpA</strong><br>
+                                        <span style="color: #666; font-weight: 700;">Centro di Eccellenza Audiologica</span><br>
+                                        <span style="color: #888; font-size: 1rem; font-style: italic;">Clicca sulla mappa per indicazioni dettagliate</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Animated vertical separator -->
+                            <div class="vertical-separator separator-animate" style="position: absolute; right: -1px; top: 0; bottom: 0; width: 5px; background: linear-gradient(to bottom, transparent, #43b36a, transparent); opacity: 0.8; animation: pulse 2s infinite 0.5s;"></div>
+                        </div>
+                        <!-- Section 2: Social Media Links -->
+                        <div class="footer-section-animate" style="flex: 1 1 0; min-width: 320px; padding: 32px 28px; position: relative; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle mb-30">
+                                    <h4 style="color: #2E7D32; font-weight: 900; font-size: 2.1rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">Seguici</h4>
+                                    <p style="color: #666; font-size: 1.25rem; margin-bottom: 30px; line-height: 1.7; font-family: 'Open Sans', sans-serif; font-weight: 500;">Rimani connesso con le nostre innovazioni e aggiornamenti</p>
+                                </div>
+                                <!-- Social Media Icons Grid -->
+                                <div class="social-media-grid social-grid-animate" style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 30px; justify-items: center;">
+                                    <!-- Instagram -->
+                                    <a href="https://www.instagram.com/otofarma_s.p.a?utm_source=ig_web_button_share_sheet&igsh=MWthM3Q0MndpaXB5Nw==" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                        <img src="/static/img/gallery/instagram.png" alt="Instagram" style="width: 60px; height: 60px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                    </a>
+                                    <!-- Facebook -->
+                                    <a href="https://www.facebook.com/share/1PW4kE1vwW/?mibextid=wwXIfr" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                        <img src="/static/img/gallery/facebook.png" alt="Facebook" style="width: 60px; height: 60px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                    </a>
+                                    <!-- LinkedIn -->
+                                    <a href="https://www.linkedin.com/company/otofarma-spa/" target="_blank" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                        <img src="/static/img/gallery/linkedin.png" alt="LinkedIn" style="width: 60px; height: 60px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                    </a>
+                                    <!-- Email -->
+                                    <a href="mailto:info@otofarma.it" class="social-icon-link" style="display: flex; align-items: center; justify-content: center; width: 85px; height: 85px; background: transparent; border-radius: 22px; text-decoration: none; border: 3px solid rgba(46, 125, 50, 0.2); transition: all 0.5s ease; box-shadow: 0 8px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                                        <img src="/static/img/gallery/communication.png" alt="Email" style="width: 60px; height: 60px; transition: all 0.4s ease; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Animated vertical separator -->
+                            <div class="vertical-separator separator-animate" style="position: absolute; right: -1px; top: 0; bottom: 0; width: 5px; background: linear-gradient(to bottom, transparent, #43b36a, transparent); opacity: 0.8; animation: pulse 2s infinite 0.5s;"></div>
+                        </div>
+                        <!-- Section 3: Contatti Diretti -->
+                        <div class="footer-section-animate" style="flex: 1 1 0; min-width: 320px; padding: 32px 28px; position: relative; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle mb-30">
+                                    <h4 style="color: #2E7D32; font-weight: 900; font-size: 2.1rem; text-transform: uppercase; letter-spacing: 1.2px; font-family: 'Poppins', sans-serif; text-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);">Contatti Diretti</h4>
+                                </div>
+                                <div style="background: rgba(46, 125, 50, 0.06); padding: 22px; border-radius: 12px; border-left: 5px solid #2E7D32; backdrop-filter: blur(5px); box-shadow: 0 6px 20px rgba(46, 125, 50, 0.1);">
+                                    <p style="color: #555; font-size: 1.25rem; margin: 12px 0; font-family: 'Open Sans', sans-serif; font-weight: 600; line-height: 1.6;">
+                                        <strong style="color: #2E7D32; font-weight: 800;">Email:</strong> <a href="mailto:info@otofarma.it" style="color: #555; text-decoration: none; font-size: 1.25rem; font-weight: 700;">info@otofarma.it</a>
+                                    </p>
+                                    <p style="color: #555; font-size: 1.25rem; margin: 12px 0; font-family: 'Open Sans', sans-serif; font-weight: 600; line-height: 1.6;">
+                                        <strong style="color: #2E7D32; font-weight: 800;">PEC:</strong> <a href="mailto:otofarmaspa@pec.it" style="color: #555; text-decoration: none; font-size: 1.25rem; font-weight: 700;">otofarmaspa@pec.it</a>
+                                    </p>
+                                    <p style="color: #555; font-size: 1.25rem; margin: 12px 0; font-family: 'Open Sans', sans-serif; font-weight: 600; line-height: 1.6;">
+                                        <strong style="color: #2E7D32; font-weight: 800;">P.IVA:</strong> <span style="font-size: 1.25rem; font-weight: 700;">08431301210</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- Company Logo Section -->
+                <div class="row justify-content-center" style="margin-top: 40px; padding-top: 30px; border-top: 2px solid rgba(46, 125, 50, 0.1);">
+                    <div class="col-xl-12 text-center">
+                        <div class="footer-logo mb-25">
+                            <a href="/"><img src="/static/img/logo/logo2_footer.png" alt="Otofarma SpA" style="max-height: 60px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom - Copyright -->
+        <div class="footer-bottom-area" style="background: rgba(46, 125, 50, 0.05); padding: 20px 0; border-top: 1px solid rgba(46, 125, 50, 0.1);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer-copy-right text-center">
+                            <p style="color: #666; font-size: 0.9rem; margin: 0; font-weight: 500;">
+                                Copyright © 2025 | <strong style="color: #2E7D32;">Otofarma SpA</strong> | P.IVA 08431301210 | 
+                                <a href="mailto:otofarmaspa@pec.it" style="color: #2E7D32; text-decoration: none;">otofarmaspa@pec.it</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Additional CSS for Interactive Effects -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
+    .animated-headline-main {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2.7rem;
+        letter-spacing: 1.5px;
+        color: #fff;
+        background: none;
+        text-shadow: 0 6px 32px rgba(76,175,80,0.18), 0 2px 8px rgba(0,0,0,0.25);
+        filter: drop-shadow(0 2px 12px rgba(76,175,80,0.12));
+        opacity: 1;
+        margin-bottom: 4px;
+        transform: translateX(160px);
+        animation: headlineSlideRight 3.8s cubic-bezier(.77,0,.18,1) 1.6s forwards;
+        white-space: pre-line;
+    }
+    .animated-headline-sub {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2.1rem;
+        color: #2E7D32;
+        background: none;
+        text-shadow: 0 4px 18px rgba(46,125,50,0.12);
+        filter: drop-shadow(0 2px 8px rgba(46,125,50,0.12));
+        font-style: italic;
+        letter-spacing: 1px;
+        opacity: 0;
+        margin-bottom: 0;
+        transform: translateY(100px);
+        animation: subFadeUp 3.8s 2.8s cubic-bezier(.77,0,.18,1) forwards;
+        white-space: pre-line;
+    }
+    @keyframes welcomeSlideLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-160px);
+        }
+        80% {
+            opacity: 1;
+            transform: translateX(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes headlineSlideRight {
+        0% {
+            opacity: 0;
+            transform: translateX(160px);
+        }
+        80% {
+            opacity: 1;
+            transform: translateX(-10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes subFadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        80% {
+            opacity: 1;
+            transform: translateY(-8px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    @media (min-width: 992px) {
+        .led-tv-container {
+            max-width: 650px;
+            width: 100%;
+        }
+    }
+    @media (max-width: 991px) {
+        .led-tv-container {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .info-sector {
+      background: linear-gradient(145deg, #ffffff, #f8f9fa);
+      border-radius: 25px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      border: 2px solid rgba(90, 172, 78, 0.15);
+      position: relative;
+      overflow: hidden;
+      padding: 45px 25px;
+      margin-bottom: 0;
+      transition: all 0.5s cubic-bezier(.77,0,.18,1);
+      min-width: 0;
+      flex: 1 1 0;
+      text-align: center;
+      animation: counterSlideUp 1.2s both;
+    }
+    .info-sector h3 {
+      color: #2E7D32;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 0 0 12px 0;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 6px rgba(46, 125, 50, 0.2);
+      display: inline-block;
+    }
+    .info-sector img {
+      width: 38px;
+      height: 38px;
+      margin-left: 12px;
+      vertical-align: middle;
+    }
+    .info-sector p {
+      font-size: 1.08rem;
+      color: #222;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin-bottom: 0;
+      font-weight: 500;
+      text-align: justify;
+    }
+    @keyframes counterSlideUp {
+      0% { opacity: 0; transform: translateY(60px) scale(0.96); }
+      80% { opacity: 1; transform: translateY(-8px) scale(1.04); }
+      100% { opacity: 1; transform: translateY(0px) scale(1); }
+    }
+    .info-sector:nth-child(1) { animation-delay: 0.2s; }
+    .info-sector:nth-child(2) { animation-delay: 0.5s; }
+    .info-sector:nth-child(3) { animation-delay: 0.8s; }
+    .info-sectors-row { margin-top: 0; margin-bottom: 0; }
+    @media (max-width: 991px) {
+      .info-sectors-row { flex-wrap: wrap; }
+      .info-sector { margin-bottom: 18px; }
+    }
+        /* Animated Particles CSS */
+        .animated-particles-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .particle {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            opacity: 0.7;
+            box-shadow: 0 2px 18px rgba(67,179,106,0.18), 0 2px 8px rgba(220,53,69,0.12);
+            filter: blur(0.5px);
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes moveParticle1 {
+            0% { transform: translateY(0) scale(1); opacity: 0.7; }
+            50% { transform: translateY(60px) scale(1.2); opacity: 1; }
+            100% { transform: translateY(0) scale(1); opacity: 0.7; }
+        }
+        @keyframes moveParticle2 {
+            0% { transform: translateX(0) scale(1); opacity: 0.7; }
+            50% { transform: translateX(-80px) scale(1.1); opacity: 1; }
+            100% { transform: translateX(0) scale(1); opacity: 0.7; }
+        }
+        @keyframes moveParticle3 {
+            0% { transform: translateY(0) scale(1); opacity: 0.7; }
+            50% { transform: translateY(-60px) scale(1.2); opacity: 1; }
+            100% { transform: translateY(0) scale(1); opacity: 0.7; }
+        }
+        @keyframes moveParticle4 {
+            0% { transform: translateX(0) scale(1); opacity: 0.7; }
+            50% { transform: translateX(80px) scale(1.1); opacity: 1; }
+            100% { transform: translateX(0) scale(1); opacity: 0.7; }
+        }
+        @keyframes moveParticle5 {
+            0% { transform: translateY(0) scale(1); opacity: 0.7; }
+            50% { transform: translateY(40px) scale(1.15); opacity: 1; }
+            100% { transform: translateY(0) scale(1); opacity: 0.7; }
+        }
+        </style>
+
+    <!-- JS here -->
+    <script src="/static/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/slicknav.min.js"></script>
+    <script src="/static/js/jquery.sticky.js"></script>
+    <script src="/static/js/jquery.magnific-popup.js"></script>
+    <script src="/static/js/jquery.slicknav.min.js"></script>
+    <script src="/static/js/wow.min.js"></script>
+    <script src="/static/js/jquery.countdown.min.js"></script>
+    <script src="/static/js/jquery.counterup.min.js"></script>
+    <script src="/static/js/waypoints.min.js"></script>
+    <script src="/static/js/price-range.js"></script>
+    <script src="/static/js/jquery.scrollUp.min.js"></script>
+    <script src="/static/js/jquery.nice-select.min.js"></script>
+    <script src="/static/js/jquery.paroller.min.js"></script>
+    <script src="/static/js/gijgo.min.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <!-- LED TV Animation Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const ledTvContainer = document.getElementById('ledTvContainer');
+        
+        // Create intersection observer for LED TV animation
+        const tvObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Remove animation class first to reset
+                    entry.target.classList.remove('tv-animate-in');
+                    
+                    // Force reflow to ensure class removal takes effect
+                    entry.target.offsetHeight;
+                    
+                    // Add animation class with a small delay for smooth effect
+                    setTimeout(() => {
+                        entry.target.classList.add('tv-animate-in');
+                    }, 100);
+                } else {
+                    // Remove animation class when out of view to allow re-animation
+                    entry.target.classList.remove('tv-animate-in');
+                }
+            });
+        }, {
+            threshold: 0.3, // Trigger when 30% of the element is visible
+            rootMargin: '0px 0px -50px 0px' // Start animation slightly before fully visible
+        });
+
+        // Start observing the LED TV container
+        if (ledTvContainer) {
+            tvObserver.observe(ledTvContainer);
+        }
+
+        // Enhanced LED effects on scroll
+        window.addEventListener('scroll', function() {
+            if (ledTvContainer && ledTvContainer.classList.contains('tv-animate-in')) {
+                const rect = ledTvContainer.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    // Add extra glow effect when scrolling and TV is visible
+                    const tvFrame = ledTvContainer.querySelector('.tv-frame');
+                    if (tvFrame) {
+                        tvFrame.style.filter = 'brightness(1.1) contrast(1.05)';
+                        setTimeout(() => {
+                            tvFrame.style.filter = '';
+                        }, 200);
+                    }
+                }
+            }
+        });
+
+        // Add extra entrance effect for the hero content as well
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent) {
+            const contentObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                        entry.target.style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    } else {
+                        entry.target.style.opacity = '0';
+                        entry.target.style.transform = 'translateX(-50px)';
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+            
+            // Set initial state for hero content
+            heroContent.style.opacity = '0';
+            heroContent.style.transform = 'translateX(-50px)';
+            contentObserver.observe(heroContent);
+        }
+    });
+    </script>
+
+    <!-- Headline Animation Script -->
+    <!-- Animation now handled by CSS only, no JS observer needed -->
+<script>
+// Auto-highlight current page in navbar
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('#navigation .nav-link');
+    var currentPage = window.location.pathname.split('/').pop();
+    navLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href === currentPage || (href === 'index.html' && (currentPage === '' || currentPage === 'index.html'))) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+</script>
+</body>
+</html>
